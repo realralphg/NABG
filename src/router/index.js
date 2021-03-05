@@ -5,6 +5,12 @@ import routes from './routes'
 
 Vue.use(VueRouter)
 
+import VueObserveVisibility from 'vue-observe-visibility'
+
+Vue.use(VueObserveVisibility)
+
+require('vue2-animate/dist/vue2-animate.min.css')
+
 /*
  * If not building with SSR mode, you can
  * directly export the Router instantiation;

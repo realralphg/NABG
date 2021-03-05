@@ -2,23 +2,22 @@
   <q-layout view="lHh Lpr lFf">
     <q-header class="q-py-sm bg-green" :class="sizes">
       <q-toolbar class="text-white">
-        <!-- <img
+        <img
           src="/images/logo.jpg"
           class="cursor-pointer"
           height="50"
           width="100"
           @click="$router.push('/')"
-        /> -->
+        />
 
-        <q-toolbar-title class="text-h4">
+        <!-- <q-toolbar-title class="text-h4">
           <router-link to="/" tag="span" style="cursor: pointer">
             <span class="text-weight-light">N</span>
             <span class="text-weight-bolder text-green-10">ABG</span>
           </router-link>
-        </q-toolbar-title>
+        </q-toolbar-title> -->
 
         <q-space />
-
         <q-tabs>
           <q-route-tab
             label="Home"
@@ -60,14 +59,14 @@
             to="/partner"
             exact
           />
-          <q-route-tab
+          <!-- <q-route-tab
             label="Events"
             ripple
             no-caps
             class="gt-sm q-mx-sm my-font-poppins-light"
             to="/event"
             exact
-          />
+          /> -->
           <q-route-tab
             label="News"
             ripple
@@ -149,7 +148,7 @@ export default {
   name: "MainLayout",
   data() {
     return {
-      leftDrawerOpen: false
+      leftDrawerOpen: false,
     };
   },
   computed: {
@@ -158,8 +157,8 @@ export default {
       if (size == "md" || size == "lg" || size == "xl") {
         return "q-px-xl ";
       } else return "";
-    }
-  }
+    },
+  },
 };
 </script>
 

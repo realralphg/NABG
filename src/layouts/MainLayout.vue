@@ -3,7 +3,7 @@
     <q-header class="q-py-sm bg-green" :class="sizes">
       <q-toolbar class="text-white">
         <img
-          src="/images/logo.jpg"
+          src="/images/logo.svg"
           class="cursor-pointer"
           height="50"
           width="100"

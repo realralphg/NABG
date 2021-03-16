@@ -34,6 +34,74 @@
             'visible animated slideInRight': showAnimationFor.a,
             invisible: !showAnimationFor.a,
           }"
+          class="col"
+        >
+          <q-card class="my-card bg-grey-10">
+            <q-card-section class="row justify-center q-py-xl">
+              <img src="/images/planting.svg" height="100" width="100" alt="" />
+              <div class="text-h6 text-white my-font-poppins-bold">
+                Growing Nigeria’s Agricultural Economy
+              </div>
+              <div class="text-subtitle2 text-white my-font-poppins-light">
+                Nigeria is Africa's largest economy, harnessing the prowess of
+                agriculture is of paramount importance
+              </div>
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col">
+          <q-card class="my-card bg-green">
+            <q-card-section class="row justify-center q-py-xl">
+              <img src="/images/tractor.svg" height="100" width="100" alt="" />
+              <div class="text-h6 text-white my-font-poppins-bold">
+                Creating Thousands of Jobs for the Youth
+              </div>
+              <div class="text-subtitle2 text-white my-font-poppins-light">
+                With the increase in rate of unemployment in the country, we
+                help equip youth with needed knowledge, tools and equipment that
+                will guide them get in their farming profession
+              </div>
+            </q-card-section>
+          </q-card>
+        </div>
+        <div
+          v-observe-visibility="{
+            callback: (isVisible, entry) =>
+              isViewableNow(isVisible, entry, 'a'),
+          }"
+          :class="{
+            'visible animated slideInLeft': showAnimationFor.a,
+            invisible: !showAnimationFor.a,
+          }"
+          class="col"
+        >
+          <q-card class="my-card bg-grey-10">
+            <q-card-section class="row justify-center q-py-xl">
+              <img src="/images/money.svg" height="100" width="100" alt="" />
+              <div class="text-h6 text-white my-font-poppins-bold">
+                Lifting Millions of Nigerians out of Poverty
+              </div>
+              <div class="text-subtitle2 text-white my-font-poppins-light">
+                Nigeria has one of the highest number of people living in
+                poverty in the world, one of our missions is to change that and
+                impact millions of lives
+              </div>
+            </q-card-section>
+          </q-card>
+        </div>
+      </div>
+    </section>
+    <!-- <section>
+      <div class="row q-gutter-xl q-pa-xl">
+        <div
+          v-observe-visibility="{
+            callback: (isVisible, entry) =>
+              isViewableNow(isVisible, entry, 'a'),
+          }"
+          :class="{
+            'visible animated slideInRight': showAnimationFor.a,
+            invisible: !showAnimationFor.a,
+          }"
         >
           <div class="col q-pa-sm">
             <q-card class="my-card bg-grey-10">
@@ -91,7 +159,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section>
       <div class="row q-gutter-xl q-pa-xl">
         <div class="col-5">
@@ -112,7 +180,7 @@
             >
             Services Provided By Exceptional Individuals
           </h3>
-          <p class="text-body1 my-font-poppins-regular">
+          <p class="text-body1 text-justify text-grey-8 my-font-poppins-light">
             We strive to engage government at all levels in setting policy
             directions and regulatory reforms to enable sustainable inclusive
             socio-economic growth. Together, we are helping to ensure food
@@ -145,9 +213,11 @@
         </div>
       </div>
     </section>
-    <q-separator class="q-mx-xl" color="black" spaced />
+    <q-separator class="q-mx-xl" color="grey-4" spaced />
     <section>
-      <div class="q-mx-xl q-pa-xl row justify-around">
+      <div
+        class="q-mx-xl q-pa-xl row justify-around text-body1 text-justify text-grey-10 my-font-poppins-light"
+      >
         <div class="text-center">
           <h3 class="text-h3 my-font-poppins-extraBold">25+</h3>
           <p class="text-body1 my-font-poppins-regular">YEARS OF EXPERIENCE</p>
@@ -168,7 +238,7 @@
         </div>
       </div>
     </section>
-    <q-separator class="q-mx-xl" color="black" spaced />
+    <q-separator class="q-mx-xl" color="grey-4" spaced />
     <section class="q-px-xl q-my-xl">
       <div class="row q-gutter-xl">
         <div

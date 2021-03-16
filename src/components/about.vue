@@ -12,7 +12,7 @@
       </q-card>
     </header>
 
-    <section class="mb-lg">
+    <section class="q-mb-lg">
       <div class="container q-px-xl">
         <div class="row">
           <div class="col">
@@ -270,8 +270,62 @@
       </div>
     </section>
 
-    <!--Footer Section-->
+    <section class="q-mt-lg">
+      <div class="row q-px-xl">
+        <div class="col">
+          <h3 class="text-h4 my-font-poppins-boldItalic custom__heading-green">
+            Our Mission
+          </h3>
+          <p class="text-body1 text-justify text-grey-8 my-font-poppins-light">
+            To be the association for the development and growth of inclusive
+            and sustainable agribusiness across Nigeria and beyond.
+          </p>
+        </div>
+      </div>
+      <div class="row q-px-xl">
+        <div class="col">
+          <h3 class="text-h4 my-font-poppins-boldItalic custom__heading-green">
+            Our Vision
+          </h3>
+          <p class="text-body1 text-justify text-grey-8 my-font-poppins-light">
+            To enable the development and implementation of policies and
+            initiatives that enhance the competitiveness of the entire
+            agriculture value chain, ensure food security and position
+            Agribusiness as a key driver for growth in the Nigerian economy.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners -->
     <!-- <section>
+      <div class="row">
+        <div class="col-1">
+          <q-img
+            src="/images/dangoteGroup.jpg"
+            spinner-color="green"
+            spinner-size="82px"
+          />
+        </div>
+        <div class="col-1">
+          <q-img
+            src="/images/bestfood.png"
+            spinner-color="green"
+            spinner-size="82px"
+          />
+        </div>
+        <div class="col-1">
+          <q-img
+            src="/images/afgean.jpg"
+            spinner-color="green"
+            spinner-size="82px"
+          />
+        </div>
+      </div>
+    </section> -->
+
+    <!--Footer Section-->
+    <section>
       <div class="q-pa-xl bg-green text-white q-mt-xl my-font-poppins-regular">
         <div class="row">
           <div class="col-md-6 col-sm-12 col-xs-12 q-pt-md">
@@ -306,7 +360,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
   </div>
 </template>
 
@@ -315,7 +369,6 @@ export default {
   data: () => ({
     slide: 1,
     slide1: "style",
-    lorem: "lorem ipsum dolor sit amet",
   }),
 };
 </script>
@@ -326,7 +379,7 @@ export default {
   //   background-attachment: fixed;
   height: 120px;
   background-size: cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),
     url("/images/about1.jpg");
   background-size: contain;
   background-attachment: fixed;

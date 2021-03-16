@@ -214,6 +214,7 @@
       </div>
     </section>
     <q-separator class="q-mx-xl" color="grey-4" spaced />
+
     <section>
       <div
         class="q-mx-xl q-pa-xl row justify-around text-body1 text-justify text-grey-10 my-font-poppins-light"
@@ -238,6 +239,7 @@
         </div>
       </div>
     </section>
+
     <q-separator class="q-mx-xl" color="grey-4" spaced />
     <section class="q-px-xl q-my-xl">
       <div class="row q-gutter-xl">
@@ -258,13 +260,6 @@
             <span class="my-font-poppins-thin">Explore</span> <br />
             <span class="text-green text-h1">NABG</span>
           </h3>
-          <!-- <img
-            src="/images/logo.jpg"
-            class="cursor-pointer"
-            height="150"
-            width="150"
-            @click="$router.push('/')"
-          /> -->
         </div>
         <div class="col-8 my-font-poppins-light">
           <div class="row q-gutter-lg">
@@ -378,6 +373,7 @@
         </div>
       </div>
     </section>
+
     <section
       v-observe-visibility="{
         callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'd'),
@@ -398,6 +394,94 @@
       </div>
       <div class="row q-gutter-lg q-my-sm">
         <div class="col">
+          <q-card flat square>
+            <q-img contain height="200px" src="/images/dangote.jpg" />
+            <q-card-section>
+              <div
+                class="text-h6 text-grey-10 text-center my-font-poppins-bold"
+              >
+                Alh. Sani Dangote
+              </div>
+              <div
+                class="text-body1 text-grey-8 text-center my-font-poppins-light"
+              >
+                President/Vice President
+              </div>
+              <div
+                class="text-body2 text-grey-8 text-center my-font-poppins-light"
+              >
+                NABG/Dangote Group Plc
+              </div>
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col">
+          <q-card flat square>
+            <q-img contain height="200px" src="/images/emmanuel.jpg" />
+            <q-card-section>
+              <div
+                class="text-h6 text-grey-10 text-center my-font-poppins-bold"
+              >
+                Emmanuel Ijewere
+              </div>
+              <div
+                class="text-body1 text-grey-8 text-center my-font-poppins-light"
+              >
+                Vice President/Chairman
+              </div>
+              <div
+                class="text-body2 text-grey-8 text-center my-font-poppins-light"
+              >
+                NABG/Best Foods Ltd
+              </div>
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col">
+          <q-card flat square>
+            <q-img contain height="200px" src="/images/manzo.jpg" />
+            <q-card-section>
+              <div
+                class="text-h6 text-grey-10 text-center my-font-poppins-bold"
+              >
+                Dr. Manzo Maigari
+              </div>
+              <div
+                class="text-body1 text-grey-8 text-center my-font-poppins-light"
+              >
+                Director General
+              </div>
+              <div
+                class="text-body2 text-grey-8 text-center my-font-poppins-light"
+              >
+                NABG
+              </div>
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col">
+          <q-card flat square>
+            <q-img contain height="200px" src="/images/salamatu.png" />
+            <q-card-section>
+              <div
+                class="text-h6 text-grey-10 text-center my-font-poppins-bold"
+              >
+                Hajia Salamatu Garba
+              </div>
+              <div
+                class="text-body1 text-grey-8 text-center my-font-poppins-light"
+              >
+                Ag. Treasurer / ED-Founder
+              </div>
+              <div
+                class="text-body2 text-grey-8 text-center my-font-poppins-light"
+              >
+                NABG/WOFAN
+              </div>
+            </q-card-section>
+          </q-card>
+        </div>
+        <!-- <div class="col">
           <q-card class="my-card">
             <q-img height="200px" contain src="/images/dangote.jpg" basic>
               <div
@@ -491,10 +575,10 @@
               />
             </q-img>
           </q-card>
-        </div>
+        </div> -->
       </div>
       <div class="row q-gutter-lg q-my-sm">
-        <div class="col">
+        <!-- <div class="col">
           <q-card class="my-card">
             <q-img height="200px" contain src="/images/manzo.jpg" basic>
               <div
@@ -588,7 +672,7 @@
               />
             </q-img>
           </q-card>
-        </div>
+        </div> -->
       </div>
       <div class="row justify-center q-mt-xl q-py-md">
         <q-btn
@@ -909,7 +993,7 @@ export default {
   visibility: hidden;
 }
 .custom__header-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),
     url("/images/header1.jpg");
   background-size: cover;
   background-attachment: fixed;

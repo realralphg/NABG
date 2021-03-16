@@ -117,7 +117,7 @@
                 class="row justify-start items-center q-gutter-md q-col-gutter no-wrap"
               >
                 <div class="col">
-                  <q-card flat square bordered>
+                  <q-card flat square>
                     <q-img contain height="200px" src="/images/dangote.jpg" />
                     <q-card-section>
                       <div
@@ -139,7 +139,7 @@
                   </q-card>
                 </div>
                 <div class="col">
-                  <q-card flat square bordered>
+                  <q-card flat square>
                     <q-img contain height="200px" src="/images/manzo.jpg" />
                     <q-card-section>
                       <div

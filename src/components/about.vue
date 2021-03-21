@@ -1,4 +1,3 @@
-
 <template>
   <div>
     <header>
@@ -48,23 +47,21 @@
               engine of economic growth with government creating the enabling
               environment for agribusinesses to thrive.
             </p>
-            <div class="container q-px-xl">
-              <div class="row">
-                <div class="col q-pa-md">
-                  <q-card flat square class="bg-white">
-                    <img height="250" src="/images/woman1.jpg" />
-                  </q-card>
-                </div>
-                <div class="col q-pa-md">
-                  <q-card flat square class="bg-white">
-                    <img height="250" src="/images/man1.jpg" />
-                  </q-card>
-                </div>
-                <div class="col q-pa-md">
-                  <q-card flat square class="bg-white">
-                    <img height="250" src="/images/farmers2.jpg" />
-                  </q-card>
-                </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
+                <q-card flat square class="bg-white">
+                  <img alt="woman1" height="250" src="/images/woman1.jpg" />
+                </q-card>
+              </div>
+              <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
+                <q-card flat square class="bg-white">
+                  <img alt="man1" height="250" src="/images/man1.jpg" />
+                </q-card>
+              </div>
+              <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
+                <q-card flat square class="bg-white">
+                  <img alt="farmers" height="250" src="/images/farmers2.jpg" />
+                </q-card>
               </div>
             </div>
             <p
@@ -96,89 +93,69 @@
     </section>
 
     <q-separator class="q-mx-xl" color="grey-4" spaced />
-    <section>
+    <section class="q-pa-xl">
       <div class="row mt-lg">
-        <div class="col-8">
-          <q-carousel
-            flat
-            v-model="slide"
-            transition-prev="slide-right"
-            transition-next="slide-left"
-            swipeable
-            animated
-            control-color="green"
-            navigation
-            padding
-            arrows
-            class="q-mt-lg"
-          >
-            <q-carousel-slide :name="1" class="column no-wrap">
-              <div
-                class="row justify-start items-center q-gutter-md q-col-gutter no-wrap"
-              >
-                <div class="col">
-                  <q-card flat square>
-                    <q-img contain height="200px" src="/images/dangote.jpg" />
-                    <q-card-section>
-                      <div
-                        class="text-h6 text-grey-10 text-center my-font-poppins-bold"
-                      >
-                        Alh. Sani Dangote
-                      </div>
-                      <div
-                        class="text-body1 text-grey-8 text-center my-font-poppins-light"
-                      >
-                        President/Vice President
-                      </div>
-                      <div
-                        class="text-body2 text-grey-8 text-center my-font-poppins-light"
-                      >
-                        NABG/Dangote Group Plc
-                      </div>
-                    </q-card-section>
-                  </q-card>
+        <div class="col-md-8 col-sm-12 col-xs-12">
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <q-card flat square>
+              <q-img contain height="200px" src="/images/dangote.jpg" />
+              <q-card-section>
+                <div
+                  class="text-h6 text-grey-10 text-center my-font-poppins-bold"
+                >
+                  Alh. Sani Dangote
                 </div>
-                <div class="col">
-                  <q-card flat square>
-                    <q-img contain height="200px" src="/images/manzo.jpg" />
-                    <q-card-section>
-                      <div
-                        class="text-h6 text-grey-10 text-center my-font-poppins-bold"
-                      >
-                        Dr. Manzo D. Maigari
-                      </div>
-                      <div
-                        class="text-body1 text-grey-8 text-center my-font-poppins-light"
-                      >
-                        Director General
-                      </div>
-                      <div
-                        class="text-body2 text-grey-8 text-center my-font-poppins-light"
-                      >
-                        NABG
-                      </div>
-                    </q-card-section>
-                  </q-card>
+                <div
+                  class="text-body1 text-grey-8 text-center my-font-poppins-light"
+                >
+                  President/Vice President
                 </div>
-              </div>
-            </q-carousel-slide>
-          </q-carousel>
+                <div
+                  class="text-body2 text-grey-8 text-center my-font-poppins-light"
+                >
+                  NABG/Dangote Group Plc
+                </div>
+              </q-card-section>
+            </q-card>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <q-card flat square>
+              <q-img contain height="200px" src="/images/manzo.jpg" />
+              <q-card-section>
+                <div
+                  class="text-h6 text-grey-10 text-center my-font-poppins-bold"
+                >
+                  Dr. Manzo D. Maigari
+                </div>
+                <div
+                  class="text-body1 text-grey-8 text-center my-font-poppins-light"
+                >
+                  Director General
+                </div>
+                <div
+                  class="text-body2 text-grey-8 text-center my-font-poppins-light"
+                >
+                  NABG
+                </div>
+              </q-card-section>
+            </q-card>
+          </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12 col-xs-12">
           <h3
             class="text-h4 text-end my-font-poppins-boldItalic custom__heading-green"
           >
             Meet Our Team
           </h3>
           <p
-            class="text-body1 text-justify text-grey-8 q-pr-xl q-mt-md my-font-poppins-light"
+            class="text-body1 text-justify text-grey-8 q-mt-md my-font-poppins-light"
           >
             We promote the principles of inclusive growth and sustainability
             through gender sensitivity engagements and creating employment
             opportunities for our youths in a structured manner.
           </p>
           <p
-            class="text-body1 text-justify text-grey-8 q-pr-xl q-mt-md my-font-poppins-light"
+            class="text-body1 text-justify text-grey-8 q-mt-md my-font-poppins-light"
           >
             We work with government at all levels and with Development Partners
             to drive sustainable growth in Nigeria’s agricultural sector.
@@ -216,7 +193,7 @@
           >
             <q-carousel-slide name="style" class="column no-wrap flex-center">
               <p class="text-h6 my-font-poppins-thin">AGRICULTURE IS LIFE</p>
-              <p class="text-h4 my-font-poppins-bold">
+              <p class="text-h4 my-font-poppins-bold gt-sm">
                 What famous people say about agriculture
               </p>
               <div class="q-mt-md text-center text-body1 my-font-poppins-light">
@@ -232,7 +209,7 @@
             </q-carousel-slide>
             <q-carousel-slide name="style1" class="column no-wrap flex-center">
               <p class="text-h6 my-font-poppins-thin">AGRICULTURE IS LIFE</p>
-              <p class="text-h4 my-font-poppins-bold">
+              <p class="text-h4 my-font-poppins-bold gt-sm">
                 What famous people say about agriculture
               </p>
               <div class="q-mt-md text-center text-body1 my-font-poppins-light">
@@ -244,14 +221,13 @@
                 issues.
                 <span>&#34;</span> -
                 <span class="text-green text-body2">
-                  Ertharin Cousin, Executive Director of the World Food
-                  Programme
+                  Ertharin Cousin, ED of WFP
                 </span>
               </div>
             </q-carousel-slide>
             <q-carousel-slide name="style2" class="column no-wrap flex-center">
               <p class="text-h6 my-font-poppins-thin">AGRICULTURE IS LIFE</p>
-              <p class="text-h4 my-font-poppins-bold">
+              <p class="text-h4 my-font-poppins-bold gt-sm">
                 What famous people say about agriculture
               </p>
               <div class="q-mt-md text-center text-body1 my-font-poppins-light">
@@ -326,7 +302,9 @@
 
     <!--Footer Section-->
     <section>
-      <div class="q-pa-xl bg-green text-white q-mt-xl my-font-poppins-regular">
+      <div
+        class="q-pa-xl bg-grey-10 text-white q-mt-xl my-font-poppins-regular"
+      >
         <div class="row">
           <div class="col-md-6 col-sm-12 col-xs-12 q-pt-md">
             <div class="text-body1">© 2021 NABG. All rights reserved.</div>
@@ -341,15 +319,6 @@
                 <div class="text-body1 q-mt-md cursor-pointer">About Us</div>
                 <div class="text-body1 q-mt-md cursor-pointer">Membership</div>
                 <div class="text-body1 q-mt-md cursor-pointer">Leadership</div>
-              </div>
-              <div class="col-md-4 col-sm-12 col-xs-12 q-pt-md my-font-nav">
-                <div class="text-body1 text-bold my-font">LEGAL</div>
-                <div class="text-body1 q-mt-md cursor-pointer">
-                  Terms and Agreement
-                </div>
-                <div class="text-body1 typo1 q-mt-md cursor-pointer">
-                  Privacy Policy
-                </div>
               </div>
               <div class="col-md-4 col-sm-12 col-xs-12 q-pt-md my-font-nav">
                 <div class="text-body1 typo1 text-bold my-font">CONTACT</div>

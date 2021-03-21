@@ -9,6 +9,26 @@ const routes = [
         path: '/about',
         component: () => import('pages/About.vue')
       },
+      {
+        path: '/membership',
+        component: () => import('pages/Membership.vue')
+      },
+      {
+        path: '/leadership',
+        component: () => import('pages/Leadership.vue')
+      },
+      {
+        path: '/partner',
+        component: () => import('pages/Partner.vue')
+      },
+      {
+        path: '/news',
+        component: () => import('pages/News.vue')
+      },
+      {
+        path: '/contact',
+        component: () => import('pages/Contact.vue')
+      },
     ]
   },
   // Always leave this as last one,

@@ -1,12 +1,12 @@
 <template>
   <div>
     <header class="custom__header-bg row justify-start items-center q-px-xl">
-      <div style="width: 50%" class="text-white">
+      <div class="text-white col-md-6 col-sm-12 col-xs-12">
         <q-separator color="green" spaced />
-        <h3 class="text-h6 my-font-poppins-regular">
+        <h3 class="text-h6 my-font-poppins-regular gt-sm">
           Welcome to the Age of Agricultural Transformation
         </h3>
-        <h1 class="text-h3 my-font-poppins-extraBold">
+        <h1 class="my-font-poppins-extraBold" :class="screenRatioHeading">
           Growing Nigeria’s agricultural economy, creating jobs and lifting
           millions out of poverty.
         </h1>
@@ -25,17 +25,7 @@
     </header>
     <section>
       <div class="row q-gutter-xl q-pa-xl">
-        <div
-          v-observe-visibility="{
-            callback: (isVisible, entry) =>
-              isViewableNow(isVisible, entry, 'a'),
-          }"
-          :class="{
-            'visible animated slideInRight': showAnimationFor.a,
-            invisible: !showAnimationFor.a,
-          }"
-          class="col"
-        >
+        <div class="col-md-4 col-sm-10 col-xs-10">
           <q-card class="my-card bg-grey-10">
             <q-card-section class="row justify-center q-py-xl">
               <img src="/images/planting.svg" height="100" width="100" alt="" />
@@ -49,7 +39,7 @@
             </q-card-section>
           </q-card>
         </div>
-        <div class="col">
+        <div class="col-md-4 col-sm-10 col-xs-10">
           <q-card class="my-card bg-green">
             <q-card-section class="row justify-center q-py-xl">
               <img src="/images/tractor.svg" height="100" width="100" alt="" />
@@ -64,17 +54,7 @@
             </q-card-section>
           </q-card>
         </div>
-        <div
-          v-observe-visibility="{
-            callback: (isVisible, entry) =>
-              isViewableNow(isVisible, entry, 'a'),
-          }"
-          :class="{
-            'visible animated slideInLeft': showAnimationFor.a,
-            invisible: !showAnimationFor.a,
-          }"
-          class="col"
-        >
+        <div class="col-md-4 col-sm-10 col-xs-10">
           <q-card class="my-card bg-grey-10">
             <q-card-section class="row justify-center q-py-xl">
               <img src="/images/money.svg" height="100" width="100" alt="" />
@@ -162,18 +142,8 @@
     </section> -->
     <section>
       <div class="row q-gutter-xl q-pa-xl">
-        <div class="col-5">
-          <h3
-            v-observe-visibility="{
-              callback: (isVisible, entry) =>
-                isViewableNow(isVisible, entry, 'b'),
-            }"
-            :class="{
-              'visible animated slideInLeft': showAnimationFor.b,
-              invisible: !showAnimationFor.b,
-            }"
-            class="text-h4 my-font-poppins-boldItalic"
-          >
+        <div class="col-md-5 col-sm-10 col-xs-10">
+          <h3 :class="screenRatioHeading" class="my-font-poppins-boldItalic">
             Global
             <span class="text-green text-h4 my-font-poppins-extraBold"
               >Agricultural</span
@@ -191,7 +161,7 @@
             NABG - EXECUTIVE COUNCIL
           </h6>
         </div>
-        <div class="col-1 column justify-center">
+        <div class="col-md-1 col-sm-10 col-xs-10 gt-sm column justify-center">
           <q-card
             flat
             square
@@ -204,7 +174,7 @@
             "
           ></q-card>
         </div>
-        <div class="col-4 custom__overflow">
+        <div class="col-md-4 col-sm-10 col-xs-10 custom__overflow">
           <q-img
             src="/images/kenya-1.png"
             style="width: 100%; height: 100%"
@@ -244,26 +214,16 @@
     <section class="q-px-xl q-my-xl">
       <div class="row q-gutter-xl">
         <div
-          class="col-3 column justify-center items-center my-font-poppins-extraBold"
+          class="col-md-3 col-sm-12 col-xs-12 column justify-center items-center my-font-poppins-extraBold"
         >
-          <h3
-            class="text-h3 q-my-sm"
-            v-observe-visibility="{
-              callback: (isVisible, entry) =>
-                isViewableNow(isVisible, entry, 'c'),
-            }"
-            :class="{
-              'visible animated bounceIn': showAnimationFor.c,
-              invisible: !showAnimationFor.c,
-            }"
-          >
+          <h3 class="q-my-sm" :class="screenRatioHeading">
             <span class="my-font-poppins-thin">Explore</span> <br />
-            <span class="text-green text-h1">NABG</span>
+            <span class="text-green">NABG</span>
           </h3>
         </div>
-        <div class="col-8 my-font-poppins-light">
+        <div class="col-md-8 col-sm-12 col-xs-12 my-font-poppins-light">
           <div class="row q-gutter-lg">
-            <div class="col">
+            <div class="col-md-4 col-sm-10 col-xs-10">
               <q-card
                 square
                 flat
@@ -281,7 +241,7 @@
                 </q-card-section>
               </q-card>
             </div>
-            <div class="col">
+            <div class="col-md-4 col-sm-10 col-xs-10">
               <q-card
                 square
                 flat
@@ -299,7 +259,7 @@
                 </q-card-section>
               </q-card>
             </div>
-            <div class="col">
+            <div class="col-md-4 col-sm-10 col-xs-10">
               <q-card
                 square
                 flat
@@ -319,7 +279,7 @@
             </div>
           </div>
           <div class="row q-gutter-lg q-mt-sm">
-            <div class="col">
+            <div class="col-md-4 col-sm-10 col-xs-10">
               <q-card
                 square
                 flat
@@ -337,7 +297,7 @@
                 </q-card-section>
               </q-card>
             </div>
-            <div class="col">
+            <div class="col-md-4 col-sm-10 col-xs-10">
               <q-card
                 square
                 flat
@@ -353,7 +313,7 @@
                 </q-card-section>
               </q-card>
             </div>
-            <div class="col">
+            <div class="col-md-4 col-sm-10 col-xs-10">
               <q-card
                 square
                 flat
@@ -374,26 +334,17 @@
       </div>
     </section>
 
-    <section
-      v-observe-visibility="{
-        callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'd'),
-      }"
-      :class="{
-        'visible animated slideInRight': showAnimationFor.d,
-        invisible: !showAnimationFor.d,
-      }"
-      class="q-px-xl"
-    >
+    <section class="q-px-xl">
       <div class="row q-gutter-xl">
         <div class="col my-font-poppins-thin">
-          <h3 class="text-center text-h3">
+          <h3 class="text-center" :class="screenRatioHeading">
             Executive
             <span class="my-font-poppins-extraBold text-green">Council</span>
           </h3>
         </div>
       </div>
       <div class="row q-gutter-lg q-my-sm">
-        <div class="col">
+        <div class="col-md-3 col-sm-12 col-xs-12">
           <q-card flat square>
             <q-img contain height="200px" src="/images/dangote.jpg" />
             <q-card-section>
@@ -415,7 +366,7 @@
             </q-card-section>
           </q-card>
         </div>
-        <div class="col">
+        <div class="col-md-3 col-sm-12 col-xs-12">
           <q-card flat square>
             <q-img contain height="200px" src="/images/emmanuel.jpg" />
             <q-card-section>
@@ -437,7 +388,7 @@
             </q-card-section>
           </q-card>
         </div>
-        <div class="col">
+        <div class="col-md-3 col-sm-12 col-xs-12">
           <q-card flat square>
             <q-img contain height="200px" src="/images/manzo.jpg" />
             <q-card-section>
@@ -459,7 +410,7 @@
             </q-card-section>
           </q-card>
         </div>
-        <div class="col">
+        <div class="col-md-3 col-sm-12 col-xs-12">
           <q-card flat square>
             <q-img contain height="200px" src="/images/salamatu.png" />
             <q-card-section>
@@ -481,198 +432,6 @@
             </q-card-section>
           </q-card>
         </div>
-        <!-- <div class="col">
-          <q-card class="my-card">
-            <q-img height="200px" contain src="/images/dangote.jpg" basic>
-              <div
-                class="absolute-bottom text-subtitle1 my-font-poppins-extraBold"
-              >
-                Alh Sani Dangote <br />
-                <span class="text-caption my-font-poppins-light"
-                  >President/Vice President, NABG/Dangote Group Plc</span
-                >
-              </div>
-              <q-separator
-                class="absolute-bottom q-mx-md"
-                spaced
-                color="green"
-              />
-            </q-img>
-          </q-card>
-        </div>
-        <div class="col">
-          <q-card class="my-card">
-            <q-img height="200px" contain src="/images/adamu.jpg" basic>
-              <div
-                class="absolute-bottom text-subtitle1 my-font-poppins-extraBold"
-              >
-                Sen Abudllahi Adamu <br />
-                <span class="text-caption my-font-poppins-light"
-                  >Chair Senate Committee on Agriculture, Senate</span
-                >
-              </div>
-              <q-separator
-                class="absolute-bottom q-mx-md"
-                spaced
-                color="green"
-              />
-            </q-img>
-          </q-card>
-        </div>
-        <div class="col">
-          <q-card class="my-card">
-            <q-img height="200px" contain src="/images/nakudu.jpg" basic>
-              <div
-                class="absolute-bottom text-subtitle1 my-font-poppins-extraBold"
-              >
-                Sen Sabo Nakudu <br />
-                <span class="text-caption my-font-poppins-light"
-                  >VC Senate Committee on Trade & Investment, Senate</span
-                >
-              </div>
-              <q-separator
-                class="absolute-bottom q-mx-md"
-                spaced
-                color="green"
-              />
-            </q-img>
-          </q-card>
-        </div>
-        <div class="col">
-          <q-card class="my-card">
-            <q-img height="200px" contain src="/images/kabir.jpg" basic>
-              <div
-                class="absolute-bottom text-subtitle1 my-font-poppins-extraBold"
-              >
-                Arc Kabir Ibrahim <br />
-                <span class="text-caption my-font-poppins-light"
-                  >President of AFAN, All Farms Asso. of Nigeria</span
-                >
-              </div>
-              <q-separator
-                class="absolute-bottom q-mx-md"
-                spaced
-                color="green"
-              />
-            </q-img>
-          </q-card>
-        </div>
-        <div class="col">
-          <q-card class="my-card">
-            <q-img height="200px" contain src="/images/emmanuel.jpg" basic>
-              <div
-                class="absolute-bottom text-subtitle1 my-font-poppins-extraBold"
-              >
-                Emmanuel Ijewere <br />
-                <span class="text-caption my-font-poppins-light"
-                  >Vice President/Chairman, NABG/Best Foods</span
-                >
-              </div>
-              <q-separator
-                class="absolute-bottom q-mx-md"
-                spaced
-                color="green"
-              />
-            </q-img>
-          </q-card>
-        </div> -->
-      </div>
-      <div class="row q-gutter-lg q-my-sm">
-        <!-- <div class="col">
-          <q-card class="my-card">
-            <q-img height="200px" contain src="/images/manzo.jpg" basic>
-              <div
-                class="absolute-bottom text-subtitle1 my-font-poppins-extraBold"
-              >
-                Dr Manzo Maigari <br />
-                <span class="text-caption my-font-poppins-light"
-                  >Director General, NABG</span
-                >
-              </div>
-              <q-separator
-                class="absolute-bottom q-mx-md"
-                spaced
-                color="green"
-              />
-            </q-img>
-          </q-card>
-        </div>
-        <div class="col">
-          <q-card class="my-card">
-            <q-img height="200px" contain src="/images/graham.jpg" basic>
-              <div
-                class="absolute-bottom text-subtitle1 my-font-poppins-extraBold"
-              >
-                Dr. Graham Hefer <br />
-                <span class="text-caption my-font-poppins-light"
-                  >MD, Okomu Oil Palm Co Plc</span
-                >
-              </div>
-              <q-separator
-                class="absolute-bottom q-mx-md"
-                spaced
-                color="green"
-              />
-            </q-img>
-          </q-card>
-        </div>
-        <div class="col">
-          <q-card class="my-card">
-            <q-img height="200px" contain src="/images/felix.webp" basic>
-              <div
-                class="absolute-bottom text-subtitle1 my-font-poppins-extraBold"
-              >
-                Felix Nwabuko <br />
-                <span class="text-caption my-font-poppins-light"
-                  >MD, Presco Plc</span
-                >
-              </div>
-              <q-separator
-                class="absolute-bottom q-mx-md"
-                spaced
-                color="green"
-              />
-            </q-img>
-          </q-card>
-        </div>
-        <div class="col">
-          <q-card class="my-card">
-            <q-img height="200px" contain src="/images/graham.jpeg" basic>
-              <div
-                class="absolute-bottom text-subtitle1 my-font-poppins-extraBold"
-              >
-                Graham Leslie <br />
-                <span class="text-caption my-font-poppins-light"
-                  >Country Manager, Dizengoff</span
-                >
-              </div>
-              <q-separator
-                class="absolute-bottom q-mx-md"
-                spaced
-                color="green"
-              />
-            </q-img>
-          </q-card>
-        </div>
-        <div class="col">
-          <q-card class="my-card">
-            <q-img height="200px" contain src="/images/akin.png" basic>
-              <div
-                class="absolute-bottom text-subtitle1 my-font-poppins-extraBold"
-              >
-                Akin Sawyer <br />
-                <span class="text-caption my-font-poppins-light"
-                  >Executive Secretary, AFGEAN</span
-                >
-              </div>
-              <q-separator
-                class="absolute-bottom q-mx-md"
-                spaced
-                color="green"
-              />
-            </q-img>
-          </q-card>
-        </div> -->
       </div>
       <div class="row justify-center q-mt-xl q-py-md">
         <q-btn
@@ -686,118 +445,12 @@
           label="View All"
         />
       </div>
-      <!-- <div class="row q-gutter-lg q-my-sm">
-        <div class="col">
-          <q-card class="my-card">
-            <q-img height="200px" contain src="/images/salamatu.png" basic>
-              <div
-                class="absolute-bottom text-subtitle1 my-font-poppins-extraBold"
-              >
-                Haj Salamatu Garba <br />
-                <span class="text-caption my-font-poppins-light"
-                  >ED/Founder, NABG/WOFAN</span
-                >
-              </div>
-              <q-separator
-                class="absolute-bottom q-mx-md"
-                spaced
-                color="green"
-              />
-            </q-img>
-          </q-card>
-        </div>
-        <div class="col">
-          <q-card class="my-card">
-            <q-img height="200px" contain src="/images/tafida.jpg" basic>
-              <div
-                class="absolute-bottom text-subtitle1 my-font-poppins-extraBold"
-              >
-                Alh. Isa Tafida mafindi <br />
-                <span class="text-caption my-font-poppins-light"
-                  >CEO, Famag Jal Nigeria Ltd</span
-                >
-              </div>
-              <q-separator
-                class="absolute-bottom q-mx-md"
-                spaced
-                color="green"
-              />
-            </q-img>
-          </q-card>
-        </div>
-        <div class="col">
-          <q-card class="my-card">
-            <q-img height="200px" contain src="/images/abubakar.jpg" basic>
-              <div
-                class="absolute-bottom text-subtitle1 my-font-poppins-extraBold"
-              >
-                M.D Abubakar <br />
-                <span class="text-caption my-font-poppins-light"
-                  >Chairman, L &Z Int. Farms Ltd</span
-                >
-              </div>
-              <q-separator
-                class="absolute-bottom q-mx-md"
-                spaced
-                color="green"
-              />
-            </q-img>
-          </q-card>
-        </div>
-        <div class="col">
-          <q-card class="my-card">
-            <q-img height="200px" contain src="/images/mukul.png" basic>
-              <div
-                class="absolute-bottom text-subtitle1 my-font-poppins-extraBold"
-              >
-                MuKul Mathur <br />
-                <span class="text-caption my-font-poppins-light"
-                  >Country Head, Olam Nigeria</span
-                >
-              </div>
-              <q-separator
-                class="absolute-bottom q-mx-md"
-                spaced
-                color="green"
-              />
-            </q-img>
-          </q-card>
-        </div>
-        <div class="col">
-          <q-card class="my-card">
-            <q-img height="200px" contain src="/images/rahul.jpg" basic>
-              <div
-                class="absolute-bottom text-subtitle1 my-font-poppins-extraBold"
-              >
-                Rahul Savara <br />
-                <span class="text-caption my-font-poppins-light"
-                  >GMD, CHI Group Ltd</span
-                >
-              </div>
-              <q-separator
-                class="absolute-bottom q-mx-md"
-                spaced
-                color="green"
-              />
-            </q-img>
-          </q-card>
-        </div>
-      </div> -->
     </section>
 
-    <section
-      v-observe-visibility="{
-        callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'e'),
-      }"
-      :class="{
-        'visible animated slideInLeft': showAnimationFor.e,
-        invisible: !showAnimationFor.e,
-      }"
-      class="q-px-xl"
-    >
+    <section class="q-px-xl">
       <div class="row q-gutter-xl">
         <div class="col my-font-poppins-thin">
-          <h3 class="text-center text-h3">
+          <h3 class="text-center" :class="screenRatioHeading">
             <span class="my-font-poppins-thin"
               >New<span class="text-green my-font-poppins-extraBold"
                 >s</span
@@ -807,7 +460,7 @@
         </div>
       </div>
       <div class="row q-gutter-lg q-my-sm">
-        <div class="col">
+        <div class="col-md-4 col-sm-12 col-xs-12">
           <q-card class="my-card" bordered>
             <q-img height="200px" src="/images/farmer1.webp" />
             <q-card-section>
@@ -846,7 +499,7 @@
             </q-card-actions>
           </q-card>
         </div>
-        <div class="col">
+        <div class="col-md-4 col-sm-12 col-xs-12">
           <q-card class="my-card" bordered>
             <q-img height="200px" src="/images/food2.jpg" />
             <q-card-section>
@@ -885,7 +538,7 @@
             </q-card-actions>
           </q-card>
         </div>
-        <div class="col">
+        <div class="col-md-4 col-sm-12 col-xs-12">
           <q-card class="my-card" bordered>
             <q-img height="200px" src="/images/marker4.jpg" />
             <q-card-section>
@@ -928,7 +581,9 @@
     </section>
     <!--Footer Section-->
     <section>
-      <div class="q-pa-xl bg-green text-white q-mt-xl my-font-poppins-regular">
+      <div
+        class="q-pa-xl bg-grey-10 text-white q-mt-xl my-font-poppins-regular"
+      >
         <div class="row">
           <div class="col-md-6 col-sm-12 col-xs-12 q-pt-md">
             <div class="text-body1">© 2021 NABG. All rights reserved.</div>
@@ -943,15 +598,6 @@
                 <div class="text-body1 q-mt-md cursor-pointer">About Us</div>
                 <div class="text-body1 q-mt-md cursor-pointer">Membership</div>
                 <div class="text-body1 q-mt-md cursor-pointer">Leadership</div>
-              </div>
-              <div class="col-md-4 col-sm-12 col-xs-12 q-pt-md my-font-nav">
-                <div class="text-body1 text-bold my-font">LEGAL</div>
-                <div class="text-body1 q-mt-md cursor-pointer">
-                  Terms and Agreement
-                </div>
-                <div class="text-body1 typo1 q-mt-md cursor-pointer">
-                  Privacy Policy
-                </div>
               </div>
               <div class="col-md-4 col-sm-12 col-xs-12 q-pt-md my-font-nav">
                 <div class="text-body1 typo1 text-bold my-font">CONTACT</div>
@@ -982,6 +628,14 @@ export default {
       this.showAnimationFor[section] = isVisible;
     },
   },
+  computed: {
+    screenRatioHeading() {
+      let size = this.$q.screen.name;
+      if (size == "md" || size == "lg" || size == "xl") {
+        return "text-h3";
+      } else return "text-h4";
+    },
+  },
 };
 </script>
 
@@ -998,6 +652,7 @@ export default {
   background-size: cover;
   background-attachment: fixed;
   height: calc(100vh - 66px);
+  width: 100%;
 }
 .custom__card-pointer:hover {
   cursor: pointer;

@@ -10,13 +10,6 @@
           @click="$router.push('/')"
         />
 
-        <!-- <q-toolbar-title class="text-h4">
-          <router-link to="/" tag="span" style="cursor: pointer">
-            <span class="text-weight-light">N</span>
-            <span class="text-weight-bolder text-green-10">ABG</span>
-          </router-link>
-        </q-toolbar-title> -->
-
         <q-space />
         <q-tabs>
           <q-route-tab
@@ -59,14 +52,6 @@
             to="/partner"
             exact
           />
-          <!-- <q-route-tab
-            label="Events"
-            ripple
-            no-caps
-            class="gt-sm q-mx-sm my-font-poppins-light"
-            to="/event"
-            exact
-          /> -->
           <q-route-tab
             label="News"
             ripple
@@ -108,8 +93,8 @@
                       ><q-btn
                         stretch
                         flat
-                        label="How it works"
-                        to="/"
+                        label="About Us"
+                        to="/about"
                         no-caps
                         size="md"
                         class="q-mx-sm my-font-poppins-light"
@@ -122,8 +107,64 @@
                       ><q-btn
                         stretch
                         flat
-                        label="Plan"
-                        to="/"
+                        label="Membership"
+                        to="/membership"
+                        no-caps
+                        size="md"
+                        class="q-mx-sm my-font-poppins-light"
+                    /></q-item-label>
+                  </q-item-section>
+                </q-item>
+                <q-item clickable v-close-popup>
+                  <q-item-section>
+                    <q-item-label
+                      ><q-btn
+                        stretch
+                        flat
+                        label="Leadership"
+                        to="/leadership"
+                        no-caps
+                        size="md"
+                        class="q-mx-sm my-font-poppins-light"
+                    /></q-item-label>
+                  </q-item-section>
+                </q-item>
+                <q-item clickable v-close-popup>
+                  <q-item-section>
+                    <q-item-label
+                      ><q-btn
+                        stretch
+                        flat
+                        label="Partners"
+                        to="/partner"
+                        no-caps
+                        size="md"
+                        class="q-mx-sm my-font-poppins-light"
+                    /></q-item-label>
+                  </q-item-section>
+                </q-item>
+                <q-item clickable v-close-popup>
+                  <q-item-section>
+                    <q-item-label
+                      ><q-btn
+                        stretch
+                        flat
+                        label="News"
+                        to="/news"
+                        no-caps
+                        size="md"
+                        class="q-mx-sm my-font-poppins-light"
+                    /></q-item-label>
+                  </q-item-section>
+                </q-item>
+                <q-item clickable v-close-popup>
+                  <q-item-section>
+                    <q-item-label
+                      ><q-btn
+                        stretch
+                        flat
+                        label="Contact Us"
+                        to="/contact"
                         no-caps
                         size="md"
                         class="q-mx-sm my-font-poppins-light"

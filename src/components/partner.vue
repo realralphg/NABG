@@ -11,13 +11,13 @@
       </q-card>
     </header>
 
-    <div class="q-px-xl">
+    <div class="q-px-md">
       <h3 class="text-h4 my-font-poppins-boldItalic custom__heading-green">
         Lasting Businesses thrive with Strong partnership
       </h3>
     </div>
 
-    <section class="q-px-xl text-h3 text-grey-10" style="margin-bottom: 500px">
+    <section class="q-px-md text-h3 text-grey-10" style="margin-bottom: 500px">
       Under Construction
     </section>
 

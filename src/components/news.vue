@@ -11,15 +11,15 @@
       </q-card>
     </header>
 
-    <div class="q-px-xl">
+    <div class="q-px-md">
       <h3 class="text-h4 my-font-poppins-boldItalic custom__heading-green">
         Agricultural news around the world
       </h3>
     </div>
 
-    <section class="q-px-xl">
-      <div class="row q-gutter-lg q-my-sm">
-        <div class="col-md-3 col-sm-12 col-xs-12">
+    <section>
+      <div class="row q-my-sm">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
           <q-card class="my-card" bordered>
             <q-img height="200px" src="/images/farmer1.webp" />
             <q-card-section>
@@ -58,7 +58,7 @@
             </q-card-actions>
           </q-card>
         </div>
-        <div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
           <q-card class="my-card" bordered>
             <q-img height="200px" src="/images/food2.jpg" />
             <q-card-section>
@@ -97,7 +97,7 @@
             </q-card-actions>
           </q-card>
         </div>
-        <div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
           <q-card class="my-card" bordered>
             <q-img height="200px" src="/images/marker4.jpg" />
             <q-card-section>

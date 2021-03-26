@@ -11,7 +11,7 @@
       </q-card>
     </header>
 
-    <div class="q-px-xl">
+    <div class="q-px-md">
       <h3 class="text-h4 my-font-poppins-boldItalic custom__heading-green">
         We are here for you
       </h3>
@@ -24,7 +24,7 @@
     <!--Footer Section-->
     <section>
       <div
-        class="q-pa-xl bg-grey-10 text-white q-mt-xl my-font-poppins-regular"
+        class="q-pa-md bg-grey-10 text-white q-mt-xl my-font-poppins-regular"
       >
         <div class="row">
           <div class="col-md-6 col-sm-12 col-xs-12 q-pt-md">

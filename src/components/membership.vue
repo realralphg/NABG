@@ -74,7 +74,7 @@
             bylaws.
           </p>
           <q-card flat square class="bg-white">
-            <img alt="affilate" height="300" src="/images/affilate.jpg" />
+            <img alt="affilate" height="300" src="/images/executive.jpg" />
           </q-card>
           <!-- <div>
             <img height="400" width="100%" src="/images/affilate.jpg" />
@@ -95,9 +95,9 @@
             have all privileges of membership, except those of voting and
             holding elective office.
           </p>
-          <q-card flat square class="bg-white">
+          <!-- <q-card flat square class="bg-white">
             <img alt="honorary" height="300" src="/images/honorary.jpg" />
-          </q-card>
+          </q-card> -->
           <!-- <div>
             <q-img
               height="100"
@@ -119,9 +119,9 @@
             various segments of the value chain. They make up the Executive
             Council.
           </p>
-          <q-card flat square class="bg-white">
+          <!-- <q-card flat square class="bg-white">
             <img alt="executive" height="300" src="/images/executive.jpg" />
-          </q-card>
+          </q-card> -->
         </div>
       </div>
     </section>
@@ -169,14 +169,14 @@
             Frequently Asked Questions
           </h3>
           <p
-            class="text-body1 text-justify text-grey-8 q-pr-xl q-mt-md my-font-poppins-light"
+            class="text-body1 text-justify text-grey-8 q-mt-md my-font-poppins-light"
           >
             We promote the principles of inclusive growth and sustainability
             through gender sensitivity engagements and creating employment
             opportunities for our youths in a structured manner.
           </p>
           <p
-            class="text-body1 text-justify text-grey-8 q-pr-xl q-mt-md my-font-poppins-light"
+            class="text-body1 text-justify text-grey-8 q-mt-md my-font-poppins-light"
           >
             We work with government at all levels and with Development Partners
             to drive sustainable growth in Nigeria’s agricultural sector.

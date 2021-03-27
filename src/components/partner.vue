@@ -17,8 +17,25 @@
       </h3>
     </div>
 
-    <section class="q-px-md text-h3 text-grey-10" style="margin-bottom: 500px">
-      Under Construction
+    <section class="q-pa-md">
+      <div class="row">
+        <div
+          class="col-md-2 col-sm-4 col-xs-12 q-pa-sm"
+          v-for="(partner, i) in partners"
+          :key="i"
+        >
+          <q-card flat square class="custom__card">
+            <img height="200" :src="partner.image" />
+            <q-card-section class="q-pa-sm bg-green">
+              <div
+                class="text-body1 text-center text-white my-font-poppins-light"
+              >
+                {{ partner.name }}
+              </div>
+            </q-card-section>
+          </q-card>
+        </div>
+      </div>
     </section>
 
     <!--Footer Section-->
@@ -59,6 +76,92 @@ export default {
   data: () => ({
     slide: 1,
     slide1: "style",
+    partners: [
+      {
+        name: "Dangote Group",
+        image: require("../../public/images/dangoteGroup.jpg"),
+      },
+      {
+        name: "Best Foods",
+        image: require("../../public/images/placeholder.png"),
+      },
+      {
+        name: "AFGEAN",
+        image: require("../../public/images/afgean.jpg"),
+      },
+      {
+        name: "Dizengoff",
+        image: require("../../public/images/dizengoff.png"),
+      },
+      {
+        name: "Famag Jal Nigeria Ltd",
+        image: require("../../public/images/placeholder.png"),
+      },
+      {
+        name: "NACOTAN",
+        image: require("../../public/images/nacotan.jpg"),
+      },
+      {
+        name: "AFAN",
+        image: require("../../public/images/afan.png"),
+      },
+      {
+        name: "Okomu Oil Palm",
+        image: require("../../public/images/okomu.webp"),
+      },
+      {
+        name: "Presco Plc",
+        image: require("../../public/images/presco.webp"),
+      },
+      {
+        name: "CRSWA",
+        image: require("../../public/images/placeholder.png"),
+      },
+      {
+        name: "WOFAN",
+        image: require("../../public/images/wofan.jpeg"),
+      },
+      {
+        name: "First Bank Nig",
+        image: require("../../public/images/firstbank.png"),
+      },
+      {
+        name: "L &Z Int. Farms Ltd",
+        image: require("../../public/images/landz.webp"),
+      },
+      {
+        name: "WACOT",
+        image: require("../../public/images/wacot.jpg"),
+      },
+      {
+        name: "Olam Nigeria Ltd.",
+        image: require("../../public/images/olam.jpg"),
+      },
+      {
+        name: "Flour Mills PLC",
+        image: require("../../public/images/fmn.jpg"),
+      },
+      {
+        name: "TGI ",
+        image: require("../../public/images/tgi.png"),
+      },
+      {
+        name: "Nigeria Senate",
+        image: require("../../public/images/senate.png"),
+      },
+      {
+        name: "FEPSAN",
+        image: require("../../public/images/fepsan.jpeg"),
+      },
+      {
+        name: "Wilbahi Inv Ltd",
+        image: require("../../public/images/wilbahi.jpeg"),
+      },
+      {
+        name: "Cardinal Stone Prt Ltd",
+        image: require("../../public/images/cardinal.jpg"),
+      },
+    ],
   }),
 };
 </script>

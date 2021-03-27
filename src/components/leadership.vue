@@ -71,6 +71,7 @@
               <span class="text-h6 my-font-poppins-light text-white">
                 {{ item }}
               </span>
+              <q-separator spaced class="bg-green" />
             </q-card-section>
           </q-card>
         </div>
@@ -223,7 +224,7 @@ export default {
         name: "Rahul Savara",
         image: require("../../public/images/rahul.jpg"),
         role: "GMD",
-        organization: "CHI Group Ltd",
+        organization: "Tropical General Investments ",
       },
       {
         name: "Senator Adamu Adamu",
@@ -265,8 +266,7 @@ export default {
       "AGRIC EQUIPMENT DEALERS",
       "INPUT SUPPLIERS",
       "FOOD PROCESSORS",
-      "CBN",
-      "COMMERCIAL BANKS",
+      "CBN & COMMERCIAL BANKS",
       "INSURANCE",
       "UNIVERSITY & RESEARCH INSTITUTIONS",
       "ALL AGRICULTURAL VALUE CHAIN STAKEHOLDERS",

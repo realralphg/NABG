@@ -11,7 +11,7 @@
       </q-card>
     </header>
 
-    <div class="q-px-xl">
+    <div class="q-px-md">
       <h3 class="text-h4 my-font-poppins-boldItalic custom__heading-green">
         Leaders aren't born, they are made
       </h3>
@@ -21,12 +21,12 @@
       </h3>
     </div>
 
-    <section class="q-px-xl">
+    <section>
       <div class="row">
         <div
           v-for="(executive, index) in council"
           :key="index"
-          class="col-md-3 col-sm-12 col-xs-12"
+          class="col-md-3 col-sm-12 col-xs-12 q-pa-md"
         >
           <q-card flat square>
             <q-img contain height="200px" :src="executive.image" />
@@ -59,7 +59,7 @@
       </h3>
     </div>
 
-    <section class="q-px-xl">
+    <section>
       <div class="row">
         <div
           v-for="(item, index) in stakeholders"
@@ -71,6 +71,7 @@
               <span class="text-h6 my-font-poppins-light text-white">
                 {{ item }}
               </span>
+              <q-separator spaced class="bg-green" />
             </q-card-section>
           </q-card>
         </div>
@@ -223,7 +224,7 @@ export default {
         name: "Rahul Savara",
         image: require("../../public/images/rahul.jpg"),
         role: "GMD",
-        organization: "CHI Group Ltd",
+        organization: "Tropical General Investments ",
       },
       {
         name: "Senator Adamu Adamu",
@@ -265,8 +266,7 @@ export default {
       "AGRIC EQUIPMENT DEALERS",
       "INPUT SUPPLIERS",
       "FOOD PROCESSORS",
-      "CBN",
-      "COMMERCIAL BANKS",
+      "CBN & COMMERCIAL BANKS",
       "INSURANCE",
       "UNIVERSITY & RESEARCH INSTITUTIONS",
       "ALL AGRICULTURAL VALUE CHAIN STAKEHOLDERS",

@@ -12,9 +12,9 @@
     </header>
 
     <section class="q-mb-lg">
-      <div class="container q-px-xl">
+      <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col q-pa-md">
             <h3
               class="text-h4 my-font-poppins-boldItalic custom__heading-green"
             >
@@ -93,55 +93,57 @@
     </section>
 
     <q-separator class="q-mx-xl" color="grey-4" spaced />
-    <section class="q-pa-xl">
+    <section>
       <div class="row mt-lg">
-        <div class="col-md-8 col-sm-12 col-xs-12">
-          <div class="col-md-6 col-sm-12 col-xs-12">
-            <q-card flat square>
-              <q-img contain height="200px" src="/images/dangote.jpg" />
-              <q-card-section>
-                <div
-                  class="text-h6 text-grey-10 text-center my-font-poppins-bold"
-                >
-                  Alh. Sani Dangote
-                </div>
-                <div
-                  class="text-body1 text-grey-8 text-center my-font-poppins-light"
-                >
-                  President/Vice President
-                </div>
-                <div
-                  class="text-body2 text-grey-8 text-center my-font-poppins-light"
-                >
-                  NABG/Dangote Group Plc
-                </div>
-              </q-card-section>
-            </q-card>
-          </div>
-          <div class="col-md-6 col-sm-12 col-xs-12">
-            <q-card flat square>
-              <q-img contain height="200px" src="/images/manzo.jpg" />
-              <q-card-section>
-                <div
-                  class="text-h6 text-grey-10 text-center my-font-poppins-bold"
-                >
-                  Dr. Manzo D. Maigari
-                </div>
-                <div
-                  class="text-body1 text-grey-8 text-center my-font-poppins-light"
-                >
-                  Director General
-                </div>
-                <div
-                  class="text-body2 text-grey-8 text-center my-font-poppins-light"
-                >
-                  NABG
-                </div>
-              </q-card-section>
-            </q-card>
+        <div class="col-md-8 col-sm-12 col-xs-12 q-pa-md">
+          <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12 q-pa-md">
+              <q-card flat square>
+                <q-img contain height="200px" src="/images/dangote.jpg" />
+                <q-card-section>
+                  <div
+                    class="text-h6 text-grey-10 text-center my-font-poppins-bold"
+                  >
+                    Alh. Sani Dangote
+                  </div>
+                  <div
+                    class="text-body1 text-grey-8 text-center my-font-poppins-light"
+                  >
+                    President/Vice President
+                  </div>
+                  <div
+                    class="text-body2 text-grey-8 text-center my-font-poppins-light"
+                  >
+                    NABG/Dangote Group Plc
+                  </div>
+                </q-card-section>
+              </q-card>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 q-pa-md">
+              <q-card flat square>
+                <q-img contain height="200px" src="/images/manzo.jpg" />
+                <q-card-section>
+                  <div
+                    class="text-h6 text-grey-10 text-center my-font-poppins-bold"
+                  >
+                    Dr. Manzo D. Maigari
+                  </div>
+                  <div
+                    class="text-body1 text-grey-8 text-center my-font-poppins-light"
+                  >
+                    Director General
+                  </div>
+                  <div
+                    class="text-body2 text-grey-8 text-center my-font-poppins-light"
+                  >
+                    NABG
+                  </div>
+                </q-card-section>
+              </q-card>
+            </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
           <h3
             class="text-h4 text-end my-font-poppins-boldItalic custom__heading-green"
           >
@@ -247,8 +249,8 @@
     </section>
 
     <section class="q-mt-lg">
-      <div class="row q-px-xl">
-        <div class="col">
+      <div class="row">
+        <div class="col q-px-md">
           <h3 class="text-h4 my-font-poppins-boldItalic custom__heading-green">
             Our Mission
           </h3>
@@ -258,8 +260,8 @@
           </p>
         </div>
       </div>
-      <div class="row q-px-xl">
-        <div class="col">
+      <div class="row">
+        <div class="col q-px-md">
           <h3 class="text-h4 my-font-poppins-boldItalic custom__heading-green">
             Our Vision
           </h3>

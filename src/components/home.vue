@@ -24,8 +24,8 @@
       </div>
     </header>
     <section>
-      <div class="row q-gutter-xl q-pa-xl">
-        <div class="col-md-4 col-sm-10 col-xs-10">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
           <q-card class="my-card bg-grey-10">
             <q-card-section class="row justify-center q-py-xl">
               <img src="/images/planting.svg" height="100" width="100" alt="" />
@@ -39,7 +39,7 @@
             </q-card-section>
           </q-card>
         </div>
-        <div class="col-md-4 col-sm-10 col-xs-10">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
           <q-card class="my-card bg-green">
             <q-card-section class="row justify-center q-py-xl">
               <img src="/images/tractor.svg" height="100" width="100" alt="" />
@@ -54,7 +54,7 @@
             </q-card-section>
           </q-card>
         </div>
-        <div class="col-md-4 col-sm-10 col-xs-10">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
           <q-card class="my-card bg-grey-10">
             <q-card-section class="row justify-center q-py-xl">
               <img src="/images/money.svg" height="100" width="100" alt="" />
@@ -141,8 +141,8 @@
       </div>
     </section> -->
     <section>
-      <div class="row q-gutter-xl q-pa-xl">
-        <div class="col-md-5 col-sm-10 col-xs-10">
+      <div class="row">
+        <div class="col-md-5 col-sm-12 col-xs-12 q-pa-md">
           <h3 :class="screenRatioHeading" class="my-font-poppins-boldItalic">
             Global
             <span class="text-green text-h4 my-font-poppins-extraBold"
@@ -161,7 +161,7 @@
             NABG - EXECUTIVE COUNCIL
           </h6>
         </div>
-        <div class="col-md-1 col-sm-10 col-xs-10 gt-sm column justify-center">
+        <div class="col-md-1 col-sm-12 col-xs-12 gt-sm column justify-center">
           <q-card
             flat
             square
@@ -174,7 +174,7 @@
             "
           ></q-card>
         </div>
-        <div class="col-md-4 col-sm-10 col-xs-10 custom__overflow">
+        <div class="col-md-5 col-sm-12 col-xs-12 q-pa-md custom__overflow">
           <q-img
             src="/images/kenya-1.png"
             style="width: 100%; height: 100%"
@@ -211,19 +211,19 @@
     </section>
 
     <q-separator class="q-mx-xl" color="grey-4" spaced />
-    <section class="q-px-xl q-my-xl">
-      <div class="row q-gutter-xl">
+    <section class="q-my-xl">
+      <div class="row">
         <div
-          class="col-md-3 col-sm-12 col-xs-12 column justify-center items-center my-font-poppins-extraBold"
+          class="col-md-3 col-sm-12 col-xs-12 q-pa-md column justify-center items-center my-font-poppins-extraBold"
         >
           <h3 class="q-my-sm" :class="screenRatioHeading">
             <span class="my-font-poppins-thin">Explore</span> <br />
             <span class="text-green">NABG</span>
           </h3>
         </div>
-        <div class="col-md-8 col-sm-12 col-xs-12 my-font-poppins-light">
-          <div class="row q-gutter-lg">
-            <div class="col-md-4 col-sm-10 col-xs-10">
+        <div class="col-md-9 col-sm-12 q-pa-md col-xs-12 my-font-poppins-light">
+          <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
               <q-card
                 square
                 flat
@@ -241,7 +241,7 @@
                 </q-card-section>
               </q-card>
             </div>
-            <div class="col-md-4 col-sm-10 col-xs-10">
+            <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
               <q-card
                 square
                 flat
@@ -259,7 +259,7 @@
                 </q-card-section>
               </q-card>
             </div>
-            <div class="col-md-4 col-sm-10 col-xs-10">
+            <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
               <q-card
                 square
                 flat
@@ -278,8 +278,8 @@
               </q-card>
             </div>
           </div>
-          <div class="row q-gutter-lg q-mt-sm">
-            <div class="col-md-4 col-sm-10 col-xs-10">
+          <div class="row q-mt-sm">
+            <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
               <q-card
                 square
                 flat
@@ -297,7 +297,7 @@
                 </q-card-section>
               </q-card>
             </div>
-            <div class="col-md-4 col-sm-10 col-xs-10">
+            <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
               <q-card
                 square
                 flat
@@ -313,7 +313,7 @@
                 </q-card-section>
               </q-card>
             </div>
-            <div class="col-md-4 col-sm-10 col-xs-10">
+            <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
               <q-card
                 square
                 flat
@@ -334,17 +334,13 @@
       </div>
     </section>
 
-    <section class="q-px-xl">
-      <div class="row q-gutter-xl">
-        <div class="col my-font-poppins-thin">
-          <h3 class="text-center" :class="screenRatioHeading">
-            Executive
-            <span class="my-font-poppins-extraBold text-green">Council</span>
-          </h3>
-        </div>
-      </div>
-      <div class="row q-gutter-lg q-my-sm">
-        <div class="col-md-3 col-sm-12 col-xs-12">
+    <section>
+      <h3 class="my-font-poppins-thin text-center" :class="screenRatioHeading">
+        Executive
+        <span class="my-font-poppins-extraBold text-green">Council</span>
+      </h3>
+      <div class="row q-my-sm">
+        <div class="col-md-3 col-sm-12 col-xs-12 q-pa-md">
           <q-card flat square>
             <q-img contain height="200px" src="/images/dangote.jpg" />
             <q-card-section>
@@ -366,7 +362,7 @@
             </q-card-section>
           </q-card>
         </div>
-        <div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="col-md-3 col-sm-12 col-xs-12 q-pa-md">
           <q-card flat square>
             <q-img contain height="200px" src="/images/emmanuel.jpg" />
             <q-card-section>
@@ -388,7 +384,7 @@
             </q-card-section>
           </q-card>
         </div>
-        <div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="col-md-3 col-sm-12 col-xs-12 q-pa-md">
           <q-card flat square>
             <q-img contain height="200px" src="/images/manzo.jpg" />
             <q-card-section>
@@ -410,7 +406,7 @@
             </q-card-section>
           </q-card>
         </div>
-        <div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="col-md-3 col-sm-12 col-xs-12 q-pa-md">
           <q-card flat square>
             <q-img contain height="200px" src="/images/salamatu.png" />
             <q-card-section>
@@ -447,20 +443,14 @@
       </div>
     </section>
 
-    <section class="q-px-xl">
-      <div class="row q-gutter-xl">
-        <div class="col my-font-poppins-thin">
-          <h3 class="text-center" :class="screenRatioHeading">
-            <span class="my-font-poppins-thin"
-              >New<span class="text-green my-font-poppins-extraBold"
-                >s</span
-              ></span
-            >
-          </h3>
-        </div>
-      </div>
-      <div class="row q-gutter-lg q-my-sm">
-        <div class="col-md-4 col-sm-12 col-xs-12">
+    <section>
+      <h3 class="text-center my-font-poppins-thin" :class="screenRatioHeading">
+        <span class="my-font-poppins-thin"
+          >New<span class="text-green my-font-poppins-extraBold">s</span></span
+        >
+      </h3>
+      <div class="row q-my-sm">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
           <q-card class="my-card" bordered>
             <q-img height="200px" src="/images/farmer1.webp" />
             <q-card-section>
@@ -499,7 +489,7 @@
             </q-card-actions>
           </q-card>
         </div>
-        <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
           <q-card class="my-card" bordered>
             <q-img height="200px" src="/images/food2.jpg" />
             <q-card-section>
@@ -538,7 +528,7 @@
             </q-card-actions>
           </q-card>
         </div>
-        <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
           <q-card class="my-card" bordered>
             <q-img height="200px" src="/images/marker4.jpg" />
             <q-card-section>

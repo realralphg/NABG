@@ -10,21 +10,117 @@
         </q-card-section>
       </q-card>
     </header>
+    <section>
+      <div class="custom__map pa-2 white">
+        <v-map :zoom="12" :center="initialLocation">
+          <v-icondefault
+            :image-path="'/statics/leafletImages/'"
+          ></v-icondefault>
+          <v-tilelayer
+            url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+          ></v-tilelayer>
+          <v-marker
+            v-for="(l, index) in markers"
+            :key="index"
+            :lat-lng="l.latlng"
+          >
+            <v-tooltip :options="{ permanent: true }">
+              <div>
+                {{ l.text }}
+              </div>
+            </v-tooltip>
+          </v-marker>
+        </v-map>
+      </div>
+    </section>
 
-    <div class="q-px-xl">
+    <div class="q-px-md">
       <h3 class="text-h4 my-font-poppins-boldItalic custom__heading-green">
-        We are here for you
+        You can contact us anytime
       </h3>
     </div>
 
-    <section class="q-px-xl text-h3 text-grey-10" style="margin-bottom: 500px">
-      Under Construction
+    <section>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12 q-pa-md">
+          <q-img
+            contain
+            src="/images/contact1.svg"
+            :ratio="16 / 9"
+            spinner-color="green"
+          />
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12 q-pa-md">
+          <!-- <q-input
+            color="green"
+            square
+            outlined
+            type="text"
+            label="Full Name"
+          />
+          <q-input
+            color="green"
+            class="q-mt-md"
+            square
+            outlined
+            type="email"
+            label="Email"
+          /> -->
+          <q-form @submit="onSubmit" class="q-gutter-md">
+            <q-input
+              type="text"
+              color="green"
+              square
+              outlined
+              v-model="name"
+              label="Your name *"
+              hint="Name and surname"
+              lazy-rules
+              :rules="[
+                (val) => (val && val.length > 0) || 'Field cannot be empty',
+              ]"
+            />
+
+            <q-input
+              type="email"
+              color="green"
+              square
+              outlined
+              v-model="email"
+              label="Your Email *"
+              hint="E.g johndoe@gmail.com"
+              lazy-rules
+              :rules="[
+                (val) => (val && val.length > 0) || 'Field cannot be empty',
+              ]"
+            />
+
+            <q-input
+              type="textarea"
+              color="green"
+              square
+              outlined
+              v-model="message"
+              label="Your Message *"
+              hint="You Message"
+              lazy-rules
+              :rules="[
+                (val) => (val && val.length > 0) || 'Field cannot be empty',
+              ]"
+            />
+
+            <div>
+              <q-btn label="Submit" type="submit" color="green" />
+            </div>
+          </q-form>
+        </div>
+      </div>
     </section>
 
     <!--Footer Section-->
     <section>
       <div
-        class="q-pa-xl bg-grey-10 text-white q-mt-xl my-font-poppins-regular"
+        class="q-pa-md bg-grey-10 text-white q-mt-xl my-font-poppins-regular"
       >
         <div class="row">
           <div class="col-md-6 col-sm-12 col-xs-12 q-pt-md">
@@ -55,18 +151,76 @@
 </template>
 
 <script>
+// Code to fix markers not working -- don't remove
+import { Icon } from "leaflet";
+
+delete Icon.Default.prototype._getIconUrl;
+Icon.Default.mergeOptions({
+  iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
+  iconUrl: require("leaflet/dist/images/marker-icon.png"),
+  shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
+});
+
+import * as Vue2Leaflet from "vue2-leaflet";
+import { latLng } from "leaflet";
+
 export default {
-  data: () => ({
-    slide: 1,
-    slide1: "style",
-  }),
+  components: {
+    "v-map": Vue2Leaflet.LMap,
+    "v-tilelayer": Vue2Leaflet.LTileLayer,
+    "v-icondefault": Vue2Leaflet.LIconDefault,
+    "v-marker": Vue2Leaflet.LMarker,
+    "v-popup": Vue2Leaflet.LPopup,
+    "v-tooltip": Vue2Leaflet.LTooltip,
+  },
+  props: ["id"],
+  data() {
+    return {
+      name: "",
+      email: "",
+      message: "",
+      slide: 1,
+      slide1: "style",
+      markers: [
+        {
+          id: 1,
+          latlng: [9.0907048, 7.5028756],
+          text: "Head office: 26 Lake Chad Crescent Maitama, Abuja Nigeria",
+        },
+        {
+          id: 1,
+          latlng: [6.4493069, 3.4042875],
+          text:
+            "Liaison office: 126 Lewis Street Lafiaji, Obalende, Lagos Nigeria",
+        },
+      ],
+      // icon: customicon,
+      clusterOptions: {},
+      initialLocation: latLng(9.0907048, 7.5028756),
+      showMap: true,
+    };
+  },
+  methods: {
+    onSubmit() {
+      this.$q.notify({
+        color: "green-4",
+        textColor: "white",
+        icon: "cloud_done",
+        message: "Submitted",
+      });
+    },
+  },
 };
 </script>
 
 <style lang="scss">
+@import "~leaflet/dist/leaflet.css";
+
+.custom__map {
+  height: 300px;
+  width: 100%;
+}
 .custom__header-bg-v4 {
-  //   background-size: cover;
-  //   background-attachment: fixed;
   height: 120px;
   background-size: cover;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),
@@ -74,7 +228,6 @@ export default {
   background-size: contain;
   background-repeat: none;
   background-attachment: fixed;
-  // background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1005%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M516.56 530.95L581.51 568.45L581.51 643.45L516.56 680.95L451.6 643.45L451.6 568.45zM841.32 418.45L906.28 455.95L906.28 530.95L841.32 568.45L776.37 530.95L776.37 455.95zM1166.09 80.95L1231.05 118.45L1231.05 193.45L1166.09 230.95L1101.14 193.45L1101.14 118.45zM1296 530.95L1360.95 568.45L1360.95 643.45L1296 680.95L1231.05 643.45L1231.05 568.45zM1425.91 80.95L1490.86 118.45L1490.86 193.45L1425.91 230.95L1360.96 193.45L1360.96 118.45zM1360.96 193.45L1425.91 230.95L1425.91 305.95L1360.96 343.45L1296 305.95L1296 230.95zM1425.91 530.95L1490.86 568.45L1490.86 643.45L1425.91 680.95L1360.96 643.45L1360.96 568.45zM1555.82 80.95L1620.77 118.45L1620.77 193.45L1555.82 230.95L1490.86 193.45L1490.86 118.45z' stroke='rgba(82%2c 175%2c 80%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M509.06 530.95 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM574.01 568.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM574.01 643.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM509.06 680.95 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM444.1 643.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM444.1 568.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM833.82 418.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM898.78 455.95 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM898.78 530.95 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM833.82 568.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM768.87 530.95 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM768.87 455.95 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1158.59 80.95 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1223.55 118.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1223.55 193.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1158.59 230.95 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1093.64 193.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1093.64 118.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1288.5 530.95 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1353.45 568.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1353.45 643.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1288.5 680.95 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1223.55 643.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1223.55 568.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1418.41 80.95 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1483.36 118.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1483.36 193.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1418.41 230.95 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1353.46 193.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1353.46 118.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1418.41 305.95 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1353.46 343.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1288.5 305.95 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1288.5 230.95 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1418.41 530.95 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1483.36 568.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1483.36 643.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1418.41 680.95 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1353.46 643.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1353.46 568.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1548.32 80.95 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1613.27 118.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1613.27 193.45 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1548.32 230.95 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0z' fill='rgba(82%2c 175%2c 80%2c 1)'%3e%3c/path%3e%3cpath d='M76.83 513.06L120.14 538.06L120.14 588.06L76.83 613.06L33.53 588.06L33.53 538.06zM423.25 213.06L466.56 238.06L466.56 288.06L423.25 313.06L379.95 288.06L379.95 238.06zM509.86 63.06L553.16 88.06L553.16 138.06L509.86 163.06L466.56 138.06L466.56 88.06zM596.46 213.06L639.76 238.06L639.76 288.06L596.46 313.06L553.16 288.06L553.16 238.06zM639.76 288.06L683.07 313.06L683.07 363.06L639.76 388.06L596.46 363.06L596.46 313.06zM639.76 438.06L683.07 463.06L683.07 513.06L639.76 538.06L596.46 513.06L596.46 463.06zM726.37 -11.94L769.67 13.06L769.67 63.06L726.37 88.06L683.07 63.06L683.07 13.06zM769.67 213.06L812.98 238.06L812.98 288.06L769.67 313.06L726.37 288.06L726.37 238.06zM899.58 -11.94L942.88 13.06L942.88 63.06L899.58 88.06L856.28 63.06L856.28 13.06zM942.88 63.06L986.19 88.06L986.19 138.06L942.88 163.06L899.58 138.06L899.58 88.06zM942.88 363.06L986.19 388.06L986.19 438.06L942.88 463.06L899.58 438.06L899.58 388.06zM986.19 288.06L1029.49 313.06L1029.49 363.06L986.19 388.06L942.88 363.06L942.88 313.06zM1029.49 513.06L1072.79 538.06L1072.79 588.06L1029.49 613.06L986.19 588.06L986.19 538.06zM1116.09 63.06L1159.39 88.06L1159.39 138.06L1116.09 163.06L1072.79 138.06L1072.79 88.06zM1072.79 138.06L1116.09 163.06L1116.09 213.06L1072.79 238.06L1029.49 213.06L1029.49 163.06zM1246 138.06L1289.3 163.06L1289.3 213.06L1246 238.06L1202.7 213.06L1202.7 163.06zM1419.21 438.06L1462.51 463.06L1462.51 513.06L1419.21 538.06L1375.91 513.06L1375.91 463.06z' stroke='rgba(82%2c 175%2c 80%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1005'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
 .custom__heading-green::after {
   display: block;

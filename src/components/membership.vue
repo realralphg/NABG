@@ -13,71 +13,81 @@
     </header>
 
     <section class="q-mb-lg">
-      <div class="container q-px-xl">
-        <div class="row">
-          <div class="col-md-9 col-sm-12 col-xs-12">
-            <h3
-              class="text-h4 my-font-poppins-boldItalic custom__heading-green"
-            >
-              Become a Member
-            </h3>
-            <p
-              class="text-body1 text-justify text-grey-8 my-font-poppins-light"
-            >
-              We are an organized private sector platform working together to
-              grow Nigeria’s agricultural economy, creating jobs and lifting
-              millions out of poverty. Our investments cut across the entire
-              value chain from input to output markets, export markets,
-              equipment and consumer foods manufacturing.
-            </p>
-          </div>
-          <div class="col-md-3 col-sm-12 col-xs-12 q-pa-md row items-center">
-            <q-card flat square class="bg-grey-10 q-pa-md">
-              <img height="100" src="/images/logo.svg" />
-            </q-card>
-          </div>
+      <div class="row">
+        <div class="col-md-8 col-sm-12 col-xs-12 q-pa-md">
+          <h3 class="text-h4 my-font-poppins-boldItalic custom__heading-green">
+            Become a Member
+          </h3>
+          <p class="text-body1 text-justify text-grey-8 my-font-poppins-light">
+            We are an organized private sector platform working together to grow
+            Nigeria’s agricultural economy, creating jobs and lifting millions
+            out of poverty. Our investments cut across the entire value chain
+            from input to output markets, export markets, equipment and consumer
+            foods manufacturing.
+          </p>
         </div>
+        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
+          <q-card flat square class="bg-white">
+            <img alt="executive" height="200" src="/images/member.jpg" />
+          </q-card>
+        </div>
+        <!-- <div class="col-md-3 col-sm-12 col-xs-12 q-pa-md">
+          <q-card flat square class="bg-grey-10">
+            <img height="100" src="/images/logo.svg" />
+          </q-card>
+        </div> -->
       </div>
     </section>
 
     <q-separator class="q-mx-xl" color="grey-4" spaced />
 
     <section class="q-mt-lg">
-      <div class="row q-px-xl">
-        <div class="col-md-5 col-sm-12 col-xs-12">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12 q-pa-md">
           <h3 class="text-h4 my-font-poppins-boldItalic custom__heading-green">
             Group Membership
           </h3>
           <p
-            class="text-body1 text-justify text-grey-8 my-font-poppins-light q-pa-md bg-grey-1"
+            class="text-body1 text-justify text-grey-8 my-font-poppins-light bg-grey-1"
           >
             Entities eligible for group membership shall be national groups
             representing a specific industry, sector, or sub-sector, regional
             business groups, cooperative society, NGO’s and other similar
             organizations.
           </p>
+          <q-card flat square class="bg-white">
+            <img alt="group" height="300" src="/images/group.jpg" />
+          </q-card>
+          <!-- <div>
+            <img height="400" width="100%" src="/images/group.jpg" />
+          </div> -->
         </div>
-        <div class="col-1"></div>
-        <div class="col-md-5 col-sm-12 col-xs-12">
+        <div class="col-md-6 col-sm-12 col-xs-12 q-pa-md">
           <h3 class="text-h4 my-font-poppins-boldItalic custom__heading-green">
             Affiliate Membership
           </h3>
           <p
-            class="text-body1 text-justify text-grey-8 my-font-poppins-light q-pa-md bg-grey-1"
+            class="text-body1 text-justify text-grey-8 my-font-poppins-light bg-grey-1"
           >
             The Executive Council may enter into affiliation, franchise or other
             agreements or arrangements with any body in accordance with its
             bylaws.
           </p>
+          <q-card flat square class="bg-white">
+            <img alt="affilate" height="300" src="/images/executive.jpg" />
+          </q-card>
+          <!-- <div>
+            <img height="400" width="100%" src="/images/affilate.jpg" />
+          </div> -->
         </div>
       </div>
-      <div class="row q-px-xl">
-        <div class="col-md-5 col-sm-12 col-xs-12">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12 q-pa-md">
           <h3 class="text-h4 my-font-poppins-boldItalic custom__heading-green">
             Honorary Membership
           </h3>
           <p
-            class="text-body1 text-justify text-grey-8 my-font-poppins-light q-pa-md bg-grey-1"
+            class="text-body1 text-justify text-grey-8 my-font-poppins-light bg-grey-1"
           >
             Any person of good character who has singularly achieved recognized
             national or international distinction in any field may be elected to
@@ -85,20 +95,33 @@
             have all privileges of membership, except those of voting and
             holding elective office.
           </p>
+          <!-- <q-card flat square class="bg-white">
+            <img alt="honorary" height="300" src="/images/honorary.jpg" />
+          </q-card> -->
+          <!-- <div>
+            <q-img
+              height="100"
+              src="/images/honorary.jpg"
+              spinner-color="green"
+              spinner-size="82px"
+            />
+          </div> -->
         </div>
-        <div class="col-1"></div>
-        <div class="col-md-5 col-sm-12 col-xs-12">
+        <div class="col-md-6 col-sm-12 col-xs-12 q-pa-md">
           <h3 class="text-h4 my-font-poppins-boldItalic custom__heading-green">
             Founding Members
           </h3>
           <p
-            class="text-body1 text-justify text-grey-8 my-font-poppins-light q-pa-md bg-grey-1"
+            class="text-body1 text-justify text-grey-8 my-font-poppins-light bg-grey-1"
           >
             The founding members, formally called the Executive Leadership
             Group, are individuals with running agribusiness selected from the
             various segments of the value chain. They make up the Executive
             Council.
           </p>
+          <!-- <q-card flat square class="bg-white">
+            <img alt="executive" height="300" src="/images/executive.jpg" />
+          </q-card> -->
         </div>
       </div>
     </section>
@@ -138,28 +161,28 @@
     </section>
 
     <section>
-      <div class="row q-pa-xl">
-        <div class="col-md-4 col-sm-12 col-xs-12">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
           <h3
             class="text-h4 text-end my-font-poppins-boldItalic custom__heading-green"
           >
             Frequently Asked Questions
           </h3>
           <p
-            class="text-body1 text-justify text-grey-8 q-pr-xl q-mt-md my-font-poppins-light"
+            class="text-body1 text-justify text-grey-8 q-mt-md my-font-poppins-light"
           >
             We promote the principles of inclusive growth and sustainability
             through gender sensitivity engagements and creating employment
             opportunities for our youths in a structured manner.
           </p>
           <p
-            class="text-body1 text-justify text-grey-8 q-pr-xl q-mt-md my-font-poppins-light"
+            class="text-body1 text-justify text-grey-8 q-mt-md my-font-poppins-light"
           >
             We work with government at all levels and with Development Partners
             to drive sustainable growth in Nigeria’s agricultural sector.
           </p>
         </div>
-        <div class="col-md-8 col-sm-12 col-xs-12">
+        <div class="col-md-8 col-sm-12 col-xs-12 q-pa-md">
           <q-list class="bg-grey-1">
             <q-expansion-item
               expand-icon="add"

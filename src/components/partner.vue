@@ -17,22 +17,20 @@
       </h3>
     </div>
 
-    <section class="q-pa-md">
-      <div class="row">
+    <section class="custom__bg-partner">
+      <h3
+        class="text-h4 my-font-poppins-boldItalic text-center text-green q-pt-md"
+      >
+        Our Trusted Partners
+      </h3>
+      <div class="row q-px-xl">
         <div
           class="col-md-2 col-sm-4 col-xs-12 q-pa-sm"
           v-for="(partner, i) in partners"
           :key="i"
         >
-          <q-card flat square class="custom__card">
-            <img height="200" :src="partner.image" />
-            <q-card-section class="q-pa-sm bg-green">
-              <div
-                class="text-body1 text-center text-white my-font-poppins-light"
-              >
-                {{ partner.name }}
-              </div>
-            </q-card-section>
+          <q-card flat square style="height: 100%">
+            <q-img contain :ratio="16 / 9" :src="partner.image" />
           </q-card>
         </div>
       </div>
@@ -43,28 +41,78 @@
       <div
         class="q-pa-xl bg-grey-10 text-white q-mt-xl my-font-poppins-regular"
       >
+        <p class="text-h4 text-center my-font-poppins-light">
+          Let's Change the World of Agriculture
+        </p>
+        <div class="row justify-center q-mb-md">
+          <q-btn
+            no-caps
+            outline
+            flat
+            style="border: 3px solid #52af50"
+            class="text-white bg-green q-ma-sm"
+            icon-right="arrow_right"
+            label="Get Started"
+          />
+          <q-btn
+            no-caps
+            flat
+            style="border: 3px solid white"
+            class="text-white bg-transparent q-ma-sm"
+            icon-right="arrow_right"
+            label="Contact Us"
+          />
+        </div>
         <div class="row">
-          <div class="col-md-6 col-sm-12 col-xs-12 q-pt-md">
-            <div class="text-body1">© 2021 NABG. All rights reserved.</div>
-            <div class="text-body1"></div>
-            <div class="text-body1">Greysoft Technologies ©</div>
+          <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
+            <div class="text-body1 text-bold">About</div>
+            <q-separator class="bg-grey-9" style="width: 50%" />
+            <div class="text-body2 q-mt-md cursor-pointer">Home</div>
+            <div class="text-body2 q-mt-md cursor-pointer">About Us</div>
+            <div class="text-body2 q-mt-md cursor-pointer">Membership</div>
+            <div class="text-body2 q-mt-md cursor-pointer">Leadership</div>
+            <div class="text-body2 q-mt-md cursor-pointer">Partners</div>
           </div>
-          <div class="col-md-6 col-sm-12 col-xs-12">
-            <div class="row">
-              <div class="col-md-4 col-sm-12 col-xs-12 q-pt-md my-font-nav">
-                <div class="text-body1 text-bold">NAVIGATION</div>
-                <div class="text-body1 q-mt-md cursor-pointer">Home</div>
-                <div class="text-body1 q-mt-md cursor-pointer">About Us</div>
-                <div class="text-body1 q-mt-md cursor-pointer">Membership</div>
-                <div class="text-body1 q-mt-md cursor-pointer">Leadership</div>
-              </div>
-              <div class="col-md-4 col-sm-12 col-xs-12 q-pt-md my-font-nav">
-                <div class="text-body1 typo1 text-bold my-font">CONTACT</div>
-                <div class="text-body1 typo1 q-mt-md">support@nabg.org</div>
-                <div class="text-body1 typo1 q-mt-md">+234 807 777 7777</div>
-              </div>
+
+          <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
+            <div class="text-body1 text-bold">Resources</div>
+            <q-separator class="bg-grey-9" style="width: 50%" />
+            <div class="text-body2 q-mt-md cursor-pointer">News</div>
+            <div class="text-body2 q-mt-md cursor-pointer">Contact Us</div>
+          </div>
+          <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
+            <div class="text-body1 text-bold my-font">Social Media</div>
+            <q-separator class="bg-grey-9" style="width: 50%" />
+            <div class="text-body2 q-mt-md cursor-pointer">
+              <q-icon name="ion-logo-facebook" style="font-size: 2em" />
+              <span class="q-ml-sm">Facebook</span>
+            </div>
+            <div class="text-body2 q-mt-md cursor-pointer">
+              <q-icon name="ion-logo-twitter" style="font-size: 2em" />
+              <span class="q-ml-sm">Twitter</span>
+            </div>
+            <div class="text-body2 q-mt-md cursor-pointer">
+              <q-icon name="ion-logo-instagram" style="font-size: 2em" />
+              <span class="q-ml-sm">Instagram</span>
+            </div>
+            <div class="text-body2 q-mt-md cursor-pointer">
+              <q-icon name="ion-logo-linkedin" style="font-size: 2em" />
+              <span class="q-ml-sm">Linkedin</span>
             </div>
           </div>
+          <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
+            <div class="text-body1 typo1 text-bold my-font">Contact Info</div>
+            <q-separator class="bg-grey-9" style="width: 50%" />
+            <div class="text-body2 typo1 q-mt-md">
+              Head Office: No 26 Lake Chad Crescent Maitama, Abuja Nigeria.
+            </div>
+            <div class="text-body2 q-mt-md">support@nabg.org</div>
+            <div class="text-body2 q-mt-md">+234 807 777 7777</div>
+          </div>
+        </div>
+        <q-separator class="bg-grey-9 q-px-xl q-mt-xl" />
+        <div class="text-caption text-grey-6">
+          © 2021 NABG. All rights reserved.
         </div>
       </div>
     </section>
@@ -81,10 +129,10 @@ export default {
         name: "Dangote Group",
         image: require("../../public/images/dangoteGroup.jpg"),
       },
-      {
-        name: "Best Foods",
-        image: require("../../public/images/placeholder.png"),
-      },
+      // {
+      //   name: "Best Foods",
+      //   image: require("../../public/images/placeholder.png"),
+      // },
       {
         name: "AFGEAN",
         image: require("../../public/images/afgean.jpg"),
@@ -93,10 +141,10 @@ export default {
         name: "Dizengoff",
         image: require("../../public/images/dizengoff.png"),
       },
-      {
-        name: "Famag Jal Nigeria Ltd",
-        image: require("../../public/images/placeholder.png"),
-      },
+      // {
+      //   name: "Famag Jal Nigeria Ltd",
+      //   image: require("../../public/images/placeholder.png"),
+      // },
       {
         name: "NACOTAN",
         image: require("../../public/images/nacotan.jpg"),
@@ -113,10 +161,10 @@ export default {
         name: "Presco Plc",
         image: require("../../public/images/presco.webp"),
       },
-      {
-        name: "CRSWA",
-        image: require("../../public/images/placeholder.png"),
-      },
+      // {
+      //   name: "CRSWA",
+      //   image: require("../../public/images/placeholder.png"),
+      // },
       {
         name: "WOFAN",
         image: require("../../public/images/wofan.jpeg"),
@@ -168,8 +216,6 @@ export default {
 
 <style lang="scss">
 .custom__header-bg-v4 {
-  //   background-size: cover;
-  //   background-attachment: fixed;
   height: 120px;
   background-size: cover;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),
@@ -187,5 +233,12 @@ export default {
   content: " ";
   margin-top: 10px;
   margin-bottom: 30px;
+}
+.custom__bg-partner {
+  min-height: 80vh;
+  background-size: cover;
+  background: url("/images/World Map.svg");
+  background-repeat: none;
+  background-attachment: fixed;
 }
 </style>

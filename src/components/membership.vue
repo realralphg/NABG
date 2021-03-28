@@ -28,14 +28,9 @@
         </div>
         <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
           <q-card flat square class="bg-white">
-            <img alt="executive" height="200" src="/images/member.jpg" />
+            <img alt="executive" src="/images/member.jpg" />
           </q-card>
         </div>
-        <!-- <div class="col-md-3 col-sm-12 col-xs-12 q-pa-md">
-          <q-card flat square class="bg-grey-10">
-            <img height="100" src="/images/logo.svg" />
-          </q-card>
-        </div> -->
       </div>
     </section>
 
@@ -55,12 +50,9 @@
             business groups, cooperative society, NGO’s and other similar
             organizations.
           </p>
-          <q-card flat square class="bg-white">
-            <img alt="group" height="300" src="/images/group.jpg" />
-          </q-card>
-          <!-- <div>
-            <img height="400" width="100%" src="/images/group.jpg" />
-          </div> -->
+          <!-- <q-card flat square class="bg-white">
+            <img alt="group" src="/images/group.jpg" />
+          </q-card> -->
         </div>
         <div class="col-md-6 col-sm-12 col-xs-12 q-pa-md">
           <h3 class="text-h4 my-font-poppins-boldItalic custom__heading-green">
@@ -73,12 +65,16 @@
             agreements or arrangements with any body in accordance with its
             bylaws.
           </p>
+          <!-- <q-card flat square class="bg-white">
+            <img alt="affilate" src="/images/affilate.jpg" />
+          </q-card> -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
           <q-card flat square class="bg-white">
-            <img alt="affilate" height="300" src="/images/executive.jpg" />
+            <img alt="executive" src="/images/group1.jpg" />
           </q-card>
-          <!-- <div>
-            <img height="400" width="100%" src="/images/affilate.jpg" />
-          </div> -->
         </div>
       </div>
       <div class="row">
@@ -351,28 +347,78 @@
       <div
         class="q-pa-xl bg-grey-10 text-white q-mt-xl my-font-poppins-regular"
       >
+        <p class="text-h4 text-center my-font-poppins-light">
+          Let's Change the World of Agriculture
+        </p>
+        <div class="row justify-center q-mb-md">
+          <q-btn
+            no-caps
+            outline
+            flat
+            style="border: 3px solid #52af50"
+            class="text-white bg-green q-ma-sm"
+            icon-right="arrow_right"
+            label="Get Started"
+          />
+          <q-btn
+            no-caps
+            flat
+            style="border: 3px solid white"
+            class="text-white bg-transparent q-ma-sm"
+            icon-right="arrow_right"
+            label="Contact Us"
+          />
+        </div>
         <div class="row">
-          <div class="col-md-6 col-sm-12 col-xs-12 q-pt-md">
-            <div class="text-body1">© 2021 NABG. All rights reserved.</div>
-            <div class="text-body1"></div>
-            <div class="text-body1">Greysoft Technologies ©</div>
+          <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
+            <div class="text-body1 text-bold">About</div>
+            <q-separator class="bg-grey-9" style="width: 50%" />
+            <div class="text-body2 q-mt-md cursor-pointer">Home</div>
+            <div class="text-body2 q-mt-md cursor-pointer">About Us</div>
+            <div class="text-body2 q-mt-md cursor-pointer">Membership</div>
+            <div class="text-body2 q-mt-md cursor-pointer">Leadership</div>
+            <div class="text-body2 q-mt-md cursor-pointer">Partners</div>
           </div>
-          <div class="col-md-6 col-sm-12 col-xs-12">
-            <div class="row">
-              <div class="col-md-4 col-sm-12 col-xs-12 q-pt-md my-font-nav">
-                <div class="text-body1 text-bold">NAVIGATION</div>
-                <div class="text-body1 q-mt-md cursor-pointer">Home</div>
-                <div class="text-body1 q-mt-md cursor-pointer">About Us</div>
-                <div class="text-body1 q-mt-md cursor-pointer">Membership</div>
-                <div class="text-body1 q-mt-md cursor-pointer">Leadership</div>
-              </div>
-              <div class="col-md-4 col-sm-12 col-xs-12 q-pt-md my-font-nav">
-                <div class="text-body1 typo1 text-bold my-font">CONTACT</div>
-                <div class="text-body1 typo1 q-mt-md">support@nabg.org</div>
-                <div class="text-body1 typo1 q-mt-md">+234 807 777 7777</div>
-              </div>
+
+          <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
+            <div class="text-body1 text-bold">Resources</div>
+            <q-separator class="bg-grey-9" style="width: 50%" />
+            <div class="text-body2 q-mt-md cursor-pointer">News</div>
+            <div class="text-body2 q-mt-md cursor-pointer">Contact Us</div>
+          </div>
+          <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
+            <div class="text-body1 text-bold my-font">Social Media</div>
+            <q-separator class="bg-grey-9" style="width: 50%" />
+            <div class="text-body2 q-mt-md cursor-pointer">
+              <q-icon name="ion-logo-facebook" style="font-size: 2em" />
+              <span class="q-ml-sm">Facebook</span>
+            </div>
+            <div class="text-body2 q-mt-md cursor-pointer">
+              <q-icon name="ion-logo-twitter" style="font-size: 2em" />
+              <span class="q-ml-sm">Twitter</span>
+            </div>
+            <div class="text-body2 q-mt-md cursor-pointer">
+              <q-icon name="ion-logo-instagram" style="font-size: 2em" />
+              <span class="q-ml-sm">Instagram</span>
+            </div>
+            <div class="text-body2 q-mt-md cursor-pointer">
+              <q-icon name="ion-logo-linkedin" style="font-size: 2em" />
+              <span class="q-ml-sm">Linkedin</span>
             </div>
           </div>
+          <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
+            <div class="text-body1 typo1 text-bold my-font">Contact Info</div>
+            <q-separator class="bg-grey-9" style="width: 50%" />
+            <div class="text-body2 typo1 q-mt-md">
+              Head Office: No 26 Lake Chad Crescent Maitama, Abuja Nigeria.
+            </div>
+            <div class="text-body2 q-mt-md">support@nabg.org</div>
+            <div class="text-body2 q-mt-md">+234 807 777 7777</div>
+          </div>
+        </div>
+        <q-separator class="bg-grey-9 q-px-xl q-mt-xl" />
+        <div class="text-caption text-grey-6">
+          © 2021 NABG. All rights reserved.
         </div>
       </div>
     </section>

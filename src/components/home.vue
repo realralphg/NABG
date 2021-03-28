@@ -29,7 +29,7 @@
           <q-card class="my-card bg-grey-10">
             <q-card-section class="row justify-center q-py-xl">
               <img src="/images/planting.svg" height="100" width="100" alt="" />
-              <div class="text-h6 text-white my-font-poppins-bold">
+              <div class="text-body1 text-white my-font-poppins-bold">
                 Growing Nigeria’s Agricultural Economy
               </div>
               <div class="text-subtitle2 text-white my-font-poppins-light">
@@ -43,7 +43,7 @@
           <q-card class="my-card bg-green">
             <q-card-section class="row justify-center q-py-xl">
               <img src="/images/tractor.svg" height="100" width="100" alt="" />
-              <div class="text-h6 text-white my-font-poppins-bold">
+              <div class="text-body1 text-white my-font-poppins-bold">
                 Creating Thousands of Jobs for the Youth
               </div>
               <div class="text-subtitle2 text-white my-font-poppins-light">
@@ -58,7 +58,7 @@
           <q-card class="my-card bg-grey-10">
             <q-card-section class="row justify-center q-py-xl">
               <img src="/images/money.svg" height="100" width="100" alt="" />
-              <div class="text-h6 text-white my-font-poppins-bold">
+              <div class="text-body1 text-white my-font-poppins-bold">
                 Lifting Millions of Nigerians out of Poverty
               </div>
               <div class="text-subtitle2 text-white my-font-poppins-light">
@@ -345,17 +345,17 @@
             <q-img contain height="200px" src="/images/dangote.jpg" />
             <q-card-section>
               <div
-                class="text-h6 text-grey-10 text-center my-font-poppins-bold"
+                class="text-body2 text-grey-10 text-center my-font-poppins-bold"
               >
                 Alh. Sani Dangote
               </div>
               <div
-                class="text-body1 text-grey-8 text-center my-font-poppins-light"
+                class="text-caption text-grey-8 text-center my-font-poppins-light"
               >
                 President/Vice President
               </div>
               <div
-                class="text-body2 text-grey-8 text-center my-font-poppins-light"
+                class="text-caption text-grey-8 text-center my-font-poppins-light"
               >
                 NABG/Dangote Group Plc
               </div>
@@ -367,17 +367,17 @@
             <q-img contain height="200px" src="/images/emmanuel.jpg" />
             <q-card-section>
               <div
-                class="text-h6 text-grey-10 text-center my-font-poppins-bold"
+                class="text-body2 text-grey-10 text-center my-font-poppins-bold"
               >
                 Emmanuel Ijewere
               </div>
               <div
-                class="text-body1 text-grey-8 text-center my-font-poppins-light"
+                class="text-caption text-grey-8 text-center my-font-poppins-light"
               >
                 Vice President/Chairman
               </div>
               <div
-                class="text-body2 text-grey-8 text-center my-font-poppins-light"
+                class="text-caption text-grey-8 text-center my-font-poppins-light"
               >
                 NABG/Best Foods Ltd
               </div>
@@ -389,17 +389,17 @@
             <q-img contain height="200px" src="/images/manzo.jpg" />
             <q-card-section>
               <div
-                class="text-h6 text-grey-10 text-center my-font-poppins-bold"
+                class="text-body2 text-grey-10 text-center my-font-poppins-bold"
               >
                 Dr. Manzo Maigari
               </div>
               <div
-                class="text-body1 text-grey-8 text-center my-font-poppins-light"
+                class="text-caption text-grey-8 text-center my-font-poppins-light"
               >
                 Director General
               </div>
               <div
-                class="text-body2 text-grey-8 text-center my-font-poppins-light"
+                class="text-caption text-grey-8 text-center my-font-poppins-light"
               >
                 NABG
               </div>
@@ -411,17 +411,17 @@
             <q-img contain height="200px" src="/images/salamatu.png" />
             <q-card-section>
               <div
-                class="text-h6 text-grey-10 text-center my-font-poppins-bold"
+                class="text-body2 text-grey-10 text-center my-font-poppins-bold"
               >
                 Hajia Salamatu Garba
               </div>
               <div
-                class="text-body1 text-grey-8 text-center my-font-poppins-light"
+                class="text-caption text-grey-8 text-center my-font-poppins-light"
               >
                 Ag. Treasurer / ED-Founder
               </div>
               <div
-                class="text-body2 text-grey-8 text-center my-font-poppins-light"
+                class="text-caption text-grey-8 text-center my-font-poppins-light"
               >
                 NABG/WOFAN
               </div>
@@ -472,7 +472,7 @@
                 />
               </div>
               <div
-                class="my-font-poppins-regular text-green text-h6 q-mt-sm q-mb-xs"
+                class="my-font-poppins-regular text-green text-body1 q-mt-sm q-mb-xs"
               >
                 Bridging farmer-industry gaps, as firm lists fast-moving crops
               </div>
@@ -511,7 +511,7 @@
                 />
               </div>
               <div
-                class="my-font-poppins-regular text-green text-h6 q-mt-sm q-mb-xs"
+                class="my-font-poppins-regular text-green text-body1 q-mt-sm q-mb-xs"
               >
                 How to address rising cost of food items
               </div>
@@ -550,7 +550,7 @@
                 />
               </div>
               <div
-                class="my-font-poppins-regular text-green text-h6 q-mt-sm q-mb-xs"
+                class="my-font-poppins-regular text-green text-body1 q-mt-sm q-mb-xs"
               >
                 No culture without agriculture, no faith without cultivation
               </div>
@@ -574,28 +574,78 @@
       <div
         class="q-pa-xl bg-grey-10 text-white q-mt-xl my-font-poppins-regular"
       >
+        <p class="text-h4 text-center my-font-poppins-light">
+          Let's Change the World of Agriculture
+        </p>
+        <div class="row justify-center q-mb-md">
+          <q-btn
+            no-caps
+            outline
+            flat
+            style="border: 3px solid #52af50"
+            class="text-white bg-green q-mr-md q-ma-sm"
+            icon-right="arrow_right"
+            label="Get Started"
+          />
+          <q-btn
+            no-caps
+            flat
+            style="border: 3px solid white"
+            class="text-white bg-transparent q-ma-sm"
+            icon-right="arrow_right"
+            label="Contact Us"
+          />
+        </div>
         <div class="row">
-          <div class="col-md-6 col-sm-12 col-xs-12 q-pt-md">
-            <div class="text-body1">© 2021 NABG. All rights reserved.</div>
-            <div class="text-body1"></div>
-            <div class="text-body1">Greysoft Technologies ©</div>
+          <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
+            <div class="text-body1 text-bold">About</div>
+            <q-separator class="bg-grey-9" style="width: 50%" />
+            <div class="text-body2 q-mt-md cursor-pointer">Home</div>
+            <div class="text-body2 q-mt-md cursor-pointer">About Us</div>
+            <div class="text-body2 q-mt-md cursor-pointer">Membership</div>
+            <div class="text-body2 q-mt-md cursor-pointer">Leadership</div>
+            <div class="text-body2 q-mt-md cursor-pointer">Partners</div>
           </div>
-          <div class="col-md-6 col-sm-12 col-xs-12">
-            <div class="row">
-              <div class="col-md-4 col-sm-12 col-xs-12 q-pt-md my-font-nav">
-                <div class="text-body1 text-bold">NAVIGATION</div>
-                <div class="text-body1 q-mt-md cursor-pointer">Home</div>
-                <div class="text-body1 q-mt-md cursor-pointer">About Us</div>
-                <div class="text-body1 q-mt-md cursor-pointer">Membership</div>
-                <div class="text-body1 q-mt-md cursor-pointer">Leadership</div>
-              </div>
-              <div class="col-md-4 col-sm-12 col-xs-12 q-pt-md my-font-nav">
-                <div class="text-body1 typo1 text-bold my-font">CONTACT</div>
-                <div class="text-body1 typo1 q-mt-md">support@nabg.org</div>
-                <div class="text-body1 typo1 q-mt-md">+234 807 777 7777</div>
-              </div>
+
+          <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
+            <div class="text-body1 text-bold">Resources</div>
+            <q-separator class="bg-grey-9" style="width: 50%" />
+            <div class="text-body2 q-mt-md cursor-pointer">News</div>
+            <div class="text-body2 q-mt-md cursor-pointer">Contact Us</div>
+          </div>
+          <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
+            <div class="text-body1 text-bold my-font">Social Media</div>
+            <q-separator class="bg-grey-9" style="width: 50%" />
+            <div class="text-body2 q-mt-md cursor-pointer">
+              <q-icon name="ion-logo-facebook" style="font-size: 2em" />
+              <span class="q-ml-sm">Facebook</span>
+            </div>
+            <div class="text-body2 q-mt-md cursor-pointer">
+              <q-icon name="ion-logo-twitter" style="font-size: 2em" />
+              <span class="q-ml-sm">Twitter</span>
+            </div>
+            <div class="text-body2 q-mt-md cursor-pointer">
+              <q-icon name="ion-logo-instagram" style="font-size: 2em" />
+              <span class="q-ml-sm">Instagram</span>
+            </div>
+            <div class="text-body2 q-mt-md cursor-pointer">
+              <q-icon name="ion-logo-linkedin" style="font-size: 2em" />
+              <span class="q-ml-sm">Linkedin</span>
             </div>
           </div>
+          <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
+            <div class="text-body1 typo1 text-bold my-font">Contact Info</div>
+            <q-separator class="bg-grey-9" style="width: 50%" />
+            <div class="text-body2 typo1 q-mt-md">
+              Head Office: No 26 Lake Chad Crescent Maitama, Abuja Nigeria.
+            </div>
+            <div class="text-body2 q-mt-md">support@nabg.org</div>
+            <div class="text-body2 q-mt-md">+234 807 777 7777</div>
+          </div>
+        </div>
+        <q-separator class="bg-grey-9 q-px-xl q-mt-xl" />
+        <div class="text-caption text-grey-6">
+          © 2021 NABG. All rights reserved.
         </div>
       </div>
     </section>
@@ -622,8 +672,8 @@ export default {
     screenRatioHeading() {
       let size = this.$q.screen.name;
       if (size == "md" || size == "lg" || size == "xl") {
-        return "text-h3";
-      } else return "text-h4";
+        return "text-h4";
+      } else return "text-h5";
     },
   },
 };

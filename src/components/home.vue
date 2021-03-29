@@ -12,6 +12,7 @@
         </h1>
         <q-separator color="green" spaced />
         <q-btn
+          @click="$router.push('/membership')"
           no-caps
           outline
           flat
@@ -25,7 +26,7 @@
     </header>
     <section>
       <div class="row">
-        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-px-lg q-py-md">
           <q-card class="my-card bg-grey-10">
             <q-card-section class="row justify-center q-py-xl">
               <img src="/images/planting.svg" height="100" width="100" alt="" />
@@ -39,7 +40,7 @@
             </q-card-section>
           </q-card>
         </div>
-        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-px-lg q-py-md">
           <q-card class="my-card bg-green">
             <q-card-section class="row justify-center q-py-xl">
               <img src="/images/tractor.svg" height="100" width="100" alt="" />
@@ -54,7 +55,7 @@
             </q-card-section>
           </q-card>
         </div>
-        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-px-lg q-py-md">
           <q-card class="my-card bg-grey-10">
             <q-card-section class="row justify-center q-py-xl">
               <img src="/images/money.svg" height="100" width="100" alt="" />
@@ -71,78 +72,19 @@
         </div>
       </div>
     </section>
-    <!-- <section>
-      <div class="row q-gutter-xl q-pa-xl">
-        <div
-          v-observe-visibility="{
-            callback: (isVisible, entry) =>
-              isViewableNow(isVisible, entry, 'a'),
-          }"
-          :class="{
-            'visible animated slideInRight': showAnimationFor.a,
-            invisible: !showAnimationFor.a,
-          }"
-        >
-          <div class="col q-pa-sm">
-            <q-card class="my-card bg-grey-10">
-              <q-card-section class="row justify-center q-py-xl">
-                <img
-                  src="/images/planting.svg"
-                  height="100"
-                  width="100"
-                  alt=""
-                />
-                <div class="text-h6 text-white my-font-poppins-bold">
-                  Growing Nigeria’s Agricultural Economy
-                </div>
-                <div class="text-subtitle2 text-white my-font-poppins-light">
-                  Nigeria is Africa's largest economy, harnessing the prowess of
-                  agriculture is of paramount importance
-                </div>
-              </q-card-section>
-            </q-card>
-          </div>
-          <div class="col q-pa-sm">
-            <q-card class="my-card bg-green">
-              <q-card-section class="row justify-center q-py-xl">
-                <img
-                  src="/images/tractor.svg"
-                  height="100"
-                  width="100"
-                  alt=""
-                />
-                <div class="text-h6 text-white my-font-poppins-bold">
-                  Creating Thousands of Jobs for the Youth
-                </div>
-                <div class="text-subtitle2 text-white my-font-poppins-light">
-                  With the increase in rate of unemployment in the country, we
-                  help equip youth with needed knowledge, tools and equipment
-                  that will guide them get in their farming profession
-                </div>
-              </q-card-section>
-            </q-card>
-          </div>
-          <div class="col q-pa-sm">
-            <q-card class="my-card bg-grey-10">
-              <q-card-section class="row justify-center q-py-xl">
-                <img src="/images/money.svg" height="100" width="100" alt="" />
-                <div class="text-h6 text-white my-font-poppins-bold">
-                  Lifting Millions of Nigerians out of Poverty
-                </div>
-                <div class="text-subtitle2 text-white my-font-poppins-light">
-                  Nigeria has one of the highest number of people living in
-                  poverty in the world, one of our missions is to change that
-                  and impact millions of lives
-                </div>
-              </q-card-section>
-            </q-card>
-          </div>
-        </div>
-      </div>
-    </section> -->
     <section>
-      <div class="row">
-        <div class="col-md-5 col-sm-12 col-xs-12 q-pa-md">
+      <div
+        class="row"
+        v-observe-visibility="{
+          callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'b'),
+        }"
+        :class="{
+          'visible animated slideInLeft': showAnimationFor.b,
+          invisible: !showAnimationFor.b,
+          once: true,
+        }"
+      >
+        <div class="col-md-5 col-sm-12 col-xs-12 q-px-lg q-py-md">
           <h3 :class="screenRatioHeading" class="my-font-poppins-boldItalic">
             Global
             <span class="text-green text-h4 my-font-poppins-extraBold"
@@ -174,7 +116,9 @@
             "
           ></q-card>
         </div>
-        <div class="col-md-5 col-sm-12 col-xs-12 q-pa-md custom__overflow">
+        <div
+          class="col-md-5 col-sm-12 col-xs-12 q-px-lg q-py-md custom__overflow"
+        >
           <q-img
             src="/images/kenya-1.png"
             style="width: 100%; height: 100%"
@@ -214,7 +158,16 @@
     <section class="q-my-xl">
       <div class="row">
         <div
-          class="col-md-3 col-sm-12 col-xs-12 q-pa-md column justify-center items-center my-font-poppins-extraBold"
+          v-observe-visibility="{
+            callback: (isVisible, entry) =>
+              isViewableNow(isVisible, entry, 'c'),
+            once: true,
+          }"
+          :class="{
+            'visible animated slideInRight': showAnimationFor.c,
+            invisible: !showAnimationFor.c,
+          }"
+          class="col-md-3 col-sm-12 col-xs-12 q-px-lg q-py-md column justify-center items-center my-font-poppins-extraBold"
         >
           <h3 class="q-my-sm" :class="screenRatioHeading">
             <span class="my-font-poppins-thin">Explore</span> <br />
@@ -223,8 +176,9 @@
         </div>
         <div class="col-md-9 col-sm-12 q-pa-md col-xs-12 my-font-poppins-light">
           <div class="row">
-            <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
+            <div class="col-md-4 col-sm-12 col-xs-12 q-px-lg q-py-md">
               <q-card
+                @click="$router.push('/about')"
                 square
                 flat
                 class="bg-grey-4 q-pa-lg custom__card-pointer"
@@ -241,8 +195,9 @@
                 </q-card-section>
               </q-card>
             </div>
-            <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
+            <div class="col-md-4 col-sm-12 col-xs-12 q-px-lg q-py-md">
               <q-card
+                @click="$router.push('/membership')"
                 square
                 flat
                 class="bg-dark text-white q-pa-lg custom__card-pointer"
@@ -259,8 +214,9 @@
                 </q-card-section>
               </q-card>
             </div>
-            <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
+            <div class="col-md-4 col-sm-12 col-xs-12 q-px-lg q-py-md">
               <q-card
+                @click="$router.push('/leadership')"
                 square
                 flat
                 class="bg-grey-4 q-pa-lg custom__card-pointer"
@@ -279,8 +235,9 @@
             </div>
           </div>
           <div class="row q-mt-sm">
-            <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
+            <div class="col-md-4 col-sm-12 col-xs-12 q-px-lg q-py-md">
               <q-card
+                @click="$router.push('/partner')"
                 square
                 flat
                 class="bg-dark text-white q-pa-lg custom__card-pointer"
@@ -297,8 +254,9 @@
                 </q-card-section>
               </q-card>
             </div>
-            <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
+            <div class="col-md-4 col-sm-12 col-xs-12 q-px-lg q-py-md">
               <q-card
+                @click="$router.push('/news')"
                 square
                 flat
                 class="bg-grey-4 q-pa-lg custom__card-pointer"
@@ -309,12 +267,13 @@
                     class="bg-black q-mr-sm"
                     >&nbsp;</span
                   >
-                  <span class="text-h6 my-font-poppins-extraBold">Events</span>
+                  <span class="text-h6 my-font-poppins-extraBold">News</span>
                 </q-card-section>
               </q-card>
             </div>
-            <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
+            <div class="col-md-4 col-sm-12 col-xs-12 q-px-lg q-py-md">
               <q-card
+                @click="$router.push('/contact')"
                 square
                 flat
                 class="bg-dark text-white q-pa-lg custom__card-pointer"
@@ -325,7 +284,9 @@
                     class="bg-white q-mr-sm"
                     >&nbsp;</span
                   >
-                  <span class="text-h6 my-font-poppins-extraBold">News</span>
+                  <span class="text-h6 my-font-poppins-extraBold"
+                    >Contact Us</span
+                  >
                 </q-card-section>
               </q-card>
             </div>
@@ -339,8 +300,18 @@
         Executive
         <span class="my-font-poppins-extraBold text-green">Council</span>
       </h3>
-      <div class="row q-my-sm">
-        <div class="col-md-3 col-sm-12 col-xs-12 q-pa-md">
+      <div
+        class="row q-my-sm"
+        v-observe-visibility="{
+          callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'd'),
+          once: true,
+        }"
+        :class="{
+          'visible animated slideInLeft': showAnimationFor.d,
+          invisible: !showAnimationFor.d,
+        }"
+      >
+        <div class="col-md-3 col-sm-12 col-xs-12 q-px-lg q-py-md">
           <q-card flat square>
             <q-img contain height="200px" src="/images/dangote.jpg" />
             <q-card-section>
@@ -362,7 +333,7 @@
             </q-card-section>
           </q-card>
         </div>
-        <div class="col-md-3 col-sm-12 col-xs-12 q-pa-md">
+        <div class="col-md-3 col-sm-12 col-xs-12 q-px-lg q-py-md">
           <q-card flat square>
             <q-img contain height="200px" src="/images/emmanuel.jpg" />
             <q-card-section>
@@ -384,7 +355,7 @@
             </q-card-section>
           </q-card>
         </div>
-        <div class="col-md-3 col-sm-12 col-xs-12 q-pa-md">
+        <div class="col-md-3 col-sm-12 col-xs-12 q-px-lg q-py-md">
           <q-card flat square>
             <q-img contain height="200px" src="/images/manzo.jpg" />
             <q-card-section>
@@ -406,7 +377,7 @@
             </q-card-section>
           </q-card>
         </div>
-        <div class="col-md-3 col-sm-12 col-xs-12 q-pa-md">
+        <div class="col-md-3 col-sm-12 col-xs-12 q-px-lg q-py-md">
           <q-card flat square>
             <q-img contain height="200px" src="/images/salamatu.png" />
             <q-card-section>
@@ -431,6 +402,7 @@
       </div>
       <div class="row justify-center q-mt-xl q-py-md">
         <q-btn
+          @click="$router.push('/leadership')"
           no-caps
           outline
           flat
@@ -449,8 +421,18 @@
           >New<span class="text-green my-font-poppins-extraBold">s</span></span
         >
       </h3>
-      <div class="row q-my-sm">
-        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
+      <div
+        class="row q-my-sm"
+        v-observe-visibility="{
+          callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'e'),
+          once: true,
+        }"
+        :class="{
+          'visible animated slideInRight': showAnimationFor.e,
+          invisible: !showAnimationFor.e,
+        }"
+      >
+        <div class="col-md-4 col-sm-12 col-xs-12 q-px-lg q-py-md">
           <q-card class="my-card" bordered>
             <q-img height="200px" src="/images/farmer1.webp" />
             <q-card-section>
@@ -489,7 +471,7 @@
             </q-card-actions>
           </q-card>
         </div>
-        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-px-lg q-py-md">
           <q-card class="my-card" bordered>
             <q-img height="200px" src="/images/food2.jpg" />
             <q-card-section>
@@ -528,7 +510,7 @@
             </q-card-actions>
           </q-card>
         </div>
-        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-px-lg q-py-md">
           <q-card class="my-card" bordered>
             <q-img height="200px" src="/images/marker4.jpg" />
             <q-card-section>
@@ -579,6 +561,7 @@
         </p>
         <div class="row justify-center q-mb-md">
           <q-btn
+            @click="$router.push('/membership')"
             no-caps
             outline
             flat
@@ -588,6 +571,7 @@
             label="Get Started"
           />
           <q-btn
+            @click="$router.push('/contact')"
             no-caps
             flat
             style="border: 3px solid white"
@@ -600,18 +584,53 @@
           <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
             <div class="text-body1 text-bold">About</div>
             <q-separator class="bg-grey-9" style="width: 50%" />
-            <div class="text-body2 q-mt-md cursor-pointer">Home</div>
-            <div class="text-body2 q-mt-md cursor-pointer">About Us</div>
-            <div class="text-body2 q-mt-md cursor-pointer">Membership</div>
-            <div class="text-body2 q-mt-md cursor-pointer">Leadership</div>
-            <div class="text-body2 q-mt-md cursor-pointer">Partners</div>
+            <div
+              class="text-body2 q-mt-md cursor-pointer"
+              @click="$router.push('/')"
+            >
+              Home
+            </div>
+            <div
+              class="text-body2 q-mt-md cursor-pointer"
+              @click="$router.push('/about')"
+            >
+              About Us
+            </div>
+            <div
+              class="text-body2 q-mt-md cursor-pointer"
+              @click="$router.push('/membership')"
+            >
+              Membership
+            </div>
+            <div
+              class="text-body2 q-mt-md cursor-pointer"
+              @click="$router.push('/leadership')"
+            >
+              Leadership
+            </div>
+            <div
+              class="text-body2 q-mt-md cursor-pointer"
+              @click="$router.push('/partner')"
+            >
+              Partners
+            </div>
           </div>
 
           <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
             <div class="text-body1 text-bold">Resources</div>
             <q-separator class="bg-grey-9" style="width: 50%" />
-            <div class="text-body2 q-mt-md cursor-pointer">News</div>
-            <div class="text-body2 q-mt-md cursor-pointer">Contact Us</div>
+            <div
+              class="text-body2 q-mt-md cursor-pointer"
+              @click="$router.push('/news')"
+            >
+              News
+            </div>
+            <div
+              class="text-body2 q-mt-md cursor-pointer"
+              @click="$router.push('/contact')"
+            >
+              Contact Us
+            </div>
           </div>
           <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
             <div class="text-body1 text-bold my-font">Social Media</div>
@@ -647,6 +666,7 @@
         <div class="text-caption text-grey-6">
           © 2021 NABG. All rights reserved.
         </div>
+        <div class="text-caption text-grey-6">By Greysoft© Technologies.</div>
       </div>
     </section>
   </div>

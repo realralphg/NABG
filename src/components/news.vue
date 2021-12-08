@@ -22,8 +22,18 @@
     </div>
 
     <section>
-      <div class="row q-my-sm">
-        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
+      <div
+        class="row q-my-sm"
+        v-observe-visibility="{
+          callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'e'),
+          once: true,
+        }"
+        :class="{
+          'visible animated slideInRight': showAnimationFor.e,
+          invisible: !showAnimationFor.e,
+        }"
+      >
+        <div class="col-md-4 col-sm-12 col-xs-12 q-px-lg q-py-md">
           <q-card class="my-card" bordered>
             <q-img height="200px" src="/images/farmer1.webp" />
             <q-card-section>
@@ -62,7 +72,7 @@
             </q-card-actions>
           </q-card>
         </div>
-        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-px-lg q-py-md">
           <q-card class="my-card" bordered>
             <q-img height="200px" src="/images/food2.jpg" />
             <q-card-section>
@@ -101,7 +111,7 @@
             </q-card-actions>
           </q-card>
         </div>
-        <div class="col-md-4 col-sm-12 col-xs-12 q-pa-md">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-px-lg q-py-md">
           <q-card class="my-card" bordered>
             <q-img height="200px" src="/images/marker4.jpg" />
             <q-card-section>
@@ -152,15 +162,17 @@
         </p>
         <div class="row justify-center q-mb-md">
           <q-btn
+            @click="$router.push('/membership')"
             no-caps
             outline
             flat
             style="border: 3px solid #52af50"
-            class="text-white bg-green q-ma-sm"
+            class="text-white bg-green q-mr-md q-ma-sm"
             icon-right="arrow_right"
             label="Get Started"
           />
           <q-btn
+            @click="$router.push('/contact')"
             no-caps
             flat
             style="border: 3px solid white"
@@ -173,18 +185,53 @@
           <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
             <div class="text-body1 text-bold">About</div>
             <q-separator class="bg-grey-9" style="width: 50%" />
-            <div class="text-body2 q-mt-md cursor-pointer">Home</div>
-            <div class="text-body2 q-mt-md cursor-pointer">About Us</div>
-            <div class="text-body2 q-mt-md cursor-pointer">Membership</div>
-            <div class="text-body2 q-mt-md cursor-pointer">Leadership</div>
-            <div class="text-body2 q-mt-md cursor-pointer">Partners</div>
+            <div
+              class="text-body2 q-mt-md cursor-pointer"
+              @click="$router.push('/')"
+            >
+              Home
+            </div>
+            <div
+              class="text-body2 q-mt-md cursor-pointer"
+              @click="$router.push('/about')"
+            >
+              About Us
+            </div>
+            <div
+              class="text-body2 q-mt-md cursor-pointer"
+              @click="$router.push('/membership')"
+            >
+              Membership
+            </div>
+            <div
+              class="text-body2 q-mt-md cursor-pointer"
+              @click="$router.push('/leadership')"
+            >
+              Leadership
+            </div>
+            <div
+              class="text-body2 q-mt-md cursor-pointer"
+              @click="$router.push('/partner')"
+            >
+              Partners
+            </div>
           </div>
 
           <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
             <div class="text-body1 text-bold">Resources</div>
             <q-separator class="bg-grey-9" style="width: 50%" />
-            <div class="text-body2 q-mt-md cursor-pointer">News</div>
-            <div class="text-body2 q-mt-md cursor-pointer">Contact Us</div>
+            <div
+              class="text-body2 q-mt-md cursor-pointer"
+              @click="$router.push('/news')"
+            >
+              News
+            </div>
+            <div
+              class="text-body2 q-mt-md cursor-pointer"
+              @click="$router.push('/contact')"
+            >
+              Contact Us
+            </div>
           </div>
           <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
             <div class="text-body1 text-bold my-font">Social Media</div>
@@ -220,6 +267,7 @@
         <div class="text-caption text-grey-6">
           © 2021 NABG. All rights reserved.
         </div>
+        <div class="text-caption text-grey-6">By Greysoft© Technologies.</div>
       </div>
     </section>
   </div>
@@ -230,7 +278,27 @@ export default {
   data: () => ({
     slide: 1,
     slide1: "style",
+    showAnimationFor: {
+      a: false,
+      b: false,
+      c: false,
+      d: false,
+      e: false,
+    },
   }),
+  methods: {
+    isViewableNow(isVisible, entry, section) {
+      this.showAnimationFor[section] = isVisible;
+    },
+  },
+  computed: {
+    screenRatioHeading() {
+      let size = this.$q.screen.name;
+      if (size == "md" || size == "lg" || size == "xl") {
+        return "text-h4";
+      } else return "text-h5";
+    },
+  },
 };
 </script>
 

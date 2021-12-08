@@ -467,8 +467,8 @@
             <div class="text-body2 typo1 q-mt-md">
               Head Office: No 26 Lake Chad Crescent Maitama, Abuja Nigeria.
             </div>
-            <div class="text-body2 q-mt-md">support@nabg.org</div>
-            <div class="text-body2 q-mt-md">+234 807 777 7777</div>
+            <div class="text-body2 q-mt-md">contact@nabg.ng</div>
+            <div class="text-body2 q-mt-md">+2348129929300 or +2348023591357</div>
           </div>
         </div>
         <q-separator class="bg-grey-9 q-px-xl q-mt-xl" />

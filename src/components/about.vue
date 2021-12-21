@@ -335,6 +335,13 @@
             icon-right="arrow_right"
             label="Contact Us"
           />
+
+        <div class="text-caption text-grey-6">
+          <q-btn class="q-mt-sm text-green" no-caps small outline icon="mail" type="a" href="https://www.nabg.ng/webmail/" target="_blank">
+            <span class="q-pl-sm">Check Mail</span>
+          </q-btn> 
+        </div>
+
         </div>
         <div class="row">
           <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">

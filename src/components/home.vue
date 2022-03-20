@@ -300,8 +300,9 @@
         Executive
         <span class="my-font-poppins-extraBold text-green">Council</span>
       </h3>
+
       <div
-        class="row q-my-sm"
+        class="row q-my-sm justify-center"
         v-observe-visibility="{
           callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'd'),
           once: true,
@@ -311,9 +312,9 @@
           invisible: !showAnimationFor.d,
         }"
       >
-        <div class="col-md-3 col-sm-12 col-xs-12 q-px-lg q-py-md">
+        <!-- <div class="col-md-3 col-sm-12 col-xs-12 q-px-lg q-py-md">
           <q-card flat square>
-            <q-img contain height="200px" src="/images/dangote.jpg" />
+            <q-img contain height="200px" src="/images/Lawalkaita.jpg" />
             <q-card-section>
               <div
                 class="text-body2 text-grey-10 text-center my-font-poppins-bold"
@@ -332,7 +333,8 @@
               </div>
             </q-card-section>
           </q-card>
-        </div>
+        </div> -->
+
         <div class="col-md-3 col-sm-12 col-xs-12 q-px-lg q-py-md">
           <q-card flat square>
             <q-img contain height="200px" src="/images/emmanuel.jpg" />
@@ -345,7 +347,7 @@
               <div
                 class="text-caption text-grey-8 text-center my-font-poppins-light"
               >
-                Vice President/Chairman
+                President
               </div>
               <div
                 class="text-caption text-grey-8 text-center my-font-poppins-light"
@@ -355,6 +357,7 @@
             </q-card-section>
           </q-card>
         </div>
+
         <div class="col-md-3 col-sm-12 col-xs-12 q-px-lg q-py-md">
           <q-card flat square>
             <q-img contain height="200px" src="/images/manzo.jpg" />
@@ -377,7 +380,8 @@
             </q-card-section>
           </q-card>
         </div>
-        <div class="col-md-3 col-sm-12 col-xs-12 q-px-lg q-py-md">
+        
+        <!-- <div class="col-md-3 col-sm-12 col-xs-12 q-px-lg q-py-md">
           <q-card flat square>
             <q-img contain height="200px" src="/images/salamatu.png" />
             <q-card-section>
@@ -398,8 +402,11 @@
               </div>
             </q-card-section>
           </q-card>
-        </div>
+        </div> -->
+
       </div>
+
+
       <div class="row justify-center q-mt-xl q-py-md">
         <q-btn
           @click="$router.push('/leadership')"

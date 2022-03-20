@@ -229,15 +229,9 @@ export default {
     },
     council: [
       {
-        name: "Alh. Sani Dangote",
-        image: require("../../public/images/dangote.jpg"),
-        role: "President/Vice President",
-        organization: "NABG/Dangote Group Plc",
-      },
-      {
         name: "Emmanuel Ijewere ",
         image: require("../../public/images/emmanuel.jpg"),
-        role: "Vice President/Chairman ",
+        role: "President",
         organization: "NABG/Best Foods Ltd",
       },
       {
@@ -245,25 +239,6 @@ export default {
         image: require("../../public/images/manzo.jpg"),
         role: "Director General",
         organization: "NABG",
-      },
-      {
-        name: "Hajia Salamatu Garba ",
-        image: require("../../public/images/salamatu.png"),
-        role: "Ag. Treasurer / ED-Founder ",
-        organization: "NABG/WOFAN ",
-      },
-
-      {
-        name: "Akin Sawyerr",
-        image: require("../../public/images/akin.png"),
-        role: "Executive Secretary",
-        organization: "AFGEAN",
-      },
-      {
-        name: "Graham Leslie",
-        image: require("../../public/images/graham.jpeg"),
-        role: "Country Manager",
-        organization: "Dizengoff West Africa Limited",
       },
       {
         name: "Alh. Isa Tafida Mafindi",
@@ -314,10 +289,16 @@ export default {
         organization: "L &Z Int. Farms Ltd",
       },
       {
-        name: "Mr. Ujwal Kanta Senapati",
-        image: require("../../public/images/ujwal.jpeg"),
-        role: "MD",
-        organization: "WACOT",
+        name: "Alh Abdulkarim Lawal Kaita",
+        image: require("../../public/images/dangote.jpg"),
+        role: "Director",
+        organization: "Dansa Holdings Ltd",
+      },       
+      {
+        name: "Mr. Moochikal D Ramesh",
+        image: require("../../public/images/Ramesh.jpg"),
+        role: "CEO",
+        organization: "Agribusiness",
       },
       {
         name: "MuKul Mathur",
@@ -332,10 +313,10 @@ export default {
         organization: "Flour Mills PLC",
       },
       {
-        name: "Rahul Savara",
-        image: require("../../public/images/rahul.jpg"),
-        role: "GMD",
-        organization: "Tropical General Investments ",
+        name: "Abubakar Sadiq Kassim",
+        image: require("../../public/images/sadiq.jpg"),
+        role: "Director",
+        organization: "Group Corporate Affairs/ Tropical General Investments",
       },
       {
         name: "Senator Adamu Adamu",
@@ -354,13 +335,7 @@ export default {
         image: require("../../public/images/thomas.jpg"),
         role: "President",
         organization: "FEPSAN",
-      },
-      {
-        name: "Wilma Aguele",
-        image: require("../../public/images/wilma.jpg"),
-        role: "MD",
-        organization: "Wilbahi Investment Ltd",
-      },
+      },     
       {
         name: "Yomi Jemibewon",
         image: require("../../public/images/yomi.jpg"),

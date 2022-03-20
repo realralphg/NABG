@@ -120,22 +120,22 @@
           <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12 q-pa-md">
               <q-card flat square>
-                <q-img contain height="200px" src="/images/dangote.jpg" />
+                <q-img contain height="200px" src="/images/emmanuel.jpg" />
                 <q-card-section>
                   <div
                     class="text-h6 text-grey-10 text-center my-font-poppins-bold"
                   >
-                    Alh. Sani Dangote
+                    Emmanuel Ijewere
                   </div>
                   <div
                     class="text-body1 text-grey-8 text-center my-font-poppins-light"
                   >
-                    President/Vice President
+                    President
                   </div>
                   <div
                     class="text-body2 text-grey-8 text-center my-font-poppins-light"
                   >
-                    NABG/Dangote Group Plc
+                    NABG/Best Foods Ltd 
                   </div>
                 </q-card-section>
               </q-card>

@@ -271,18 +271,6 @@ export default {
         organization: "Presco Plc",
       },
       {
-        name: "Glory Adonese",
-        image: require("../../public/images/placeholder.jpg"),
-        role: "President",
-        organization: "Cross River State Women in Aquaculture",
-      },
-      {
-        name: "Uchechukwu Okorie",
-        image: require("../../public/images/placeholder.jpg"),
-        role: "Head Agribusiness Desk",
-        organization: "First Bank Nig Plc",
-      },
-      {
         name: "M.D Abubakar",
         image: require("../../public/images/abubakar.jpg"),
         role: "Chairman",
@@ -291,7 +279,7 @@ export default {
       {
         name: "Alh Abdulkarim Lawal Kaita",
         image: require("../../public/images/dangote.jpg"),
-        role: "Director",
+        role: "Group Executive Director",
         organization: "Dansa Holdings Ltd",
       },       
       {
@@ -341,6 +329,24 @@ export default {
         image: require("../../public/images/yomi.jpg"),
         role: "Director",
         organization: "Cardinal Stone Partners Ltd",
+      },
+      {
+        name: "Uchechukwu Okorie",
+        image: require("../../public/images/okorie.jpg"),
+        role: "Head Agribusiness Desk",
+        organization: "First Bank Nig Ltd",
+      },  
+      {
+        name: "Nwaneri Olubukola",
+        image: require("../../public/images/bukola.jpg"),
+        role: "Director",
+        organization: "Green Rivers Farms Ltd.",
+      },      
+      {
+        name: "Glory Adonese",
+        image: require("../../public/images/placeholder.jpg"),
+        role: "President",
+        organization: "Cross River State Women in Aquaculture",
       },
     ],
     stakeholders: [

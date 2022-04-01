@@ -36,14 +36,33 @@
             to="/membership"
             exact
           />
-          <q-route-tab
+          
+            <q-btn-dropdown flat class="leadership leader" label="Leadership">
+              <q-list>
+                <q-item active-class="primary" exact clickable to="leadership" v-close-popup>
+                  <q-item-section>
+                    <q-item-label>Executive Council</q-item-label>
+                  </q-item-section>
+                </q-item>
+
+                <q-item active-class="primary" exact clickable to="/board" v-close-popup>
+                  <q-item-section>
+                    <q-item-label>Board of Trustees</q-item-label>
+                  </q-item-section>
+                </q-item>
+              </q-list>
+            </q-btn-dropdown>
+          
+        
+         
+          <!-- <q-route-tab
             label="Leadership"
             ripple
             no-caps
             class="gt-sm q-mx-sm my-font-poppins-light"
             to="/leadership"
             exact
-          />
+          /> -->
           <q-route-tab
             label="Partners"
             ripple
@@ -123,19 +142,22 @@
                     /></q-item-label>
                   </q-item-section>
                 </q-item>
-                <q-item clickable v-close-popup>
-                  <q-item-section>
-                    <q-item-label
-                      ><q-btn
-                        stretch
-                        flat
-                        label="Leadership"
-                        to="/leadership"
-                        no-caps
-                        size="md"
-                        class="q-mx-sm my-font-poppins-light"
-                    /></q-item-label>
-                  </q-item-section>
+                <q-item>
+                  <q-btn-dropdown flat class="leadership" label="Leadership">
+                    <q-list>
+                      <q-item active-class="primary" exact clickable to="leadership" v-close-popup>
+                        <q-item-section>
+                          <q-item-label>Executive Council</q-item-label>
+                        </q-item-section>
+                      </q-item>
+
+                      <q-item active-class="primary" exact clickable to="/board" v-close-popup>
+                        <q-item-section>
+                          <q-item-label>Board of Trustees</q-item-label>
+                        </q-item-section>
+                      </q-item>
+                    </q-list>
+                  </q-btn-dropdown>
                 </q-item>
                 <q-item clickable v-close-popup>
                   <q-item-section>

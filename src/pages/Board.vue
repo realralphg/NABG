@@ -3,7 +3,7 @@
     <header>
       <q-card flat square class="custom__header-bg-v4 row items-center">
         <q-card-section class="text-h3 text-grey-1 my-font-poppins-extraBold">
-          Board
+          Board of Trustees
           <div class="text-h5 text-grey-1 my-font-poppins-thin">
             Nigeria Agribusiness Group
           </div>
@@ -11,11 +11,13 @@
       </q-card>
     </header>
 
-    <div class="q-px-md">
-      <h3 class="text-h4 my-font-poppins-boldItalic custom__heading-green">
-        Lasting Businesses thrive with Strong partnership
+    <!-- <div class="q-px-md">
+      <h3 class="text-h5 custom__heading-green">
+        Our team of seasoned professionals keep the vision in sight by bridging the gap between 
+        the Government and Private sector, ensuring that the right policies are in place to foster 
+        a thriving, sucessful and sustainable Agribusiness economy.
       </h3>
-    </div>
+    </div> -->
 
     <!-- <h1>heklo</h1> -->
     <Boards />

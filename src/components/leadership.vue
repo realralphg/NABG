@@ -12,13 +12,17 @@
     </header>
 
     <div class="q-px-md">
-      <h3 class="text-h4 my-font-poppins-boldItalic custom__heading-green">
-        Leaders aren't born, they are made
-      </h3>
       <h3 class="text-h3 my-font-poppins-thin q-ma-md q-my-lg">
         Executive
         <span class="my-font-poppins-extraBold text-green">Council</span>
       </h3>
+    <div class="q-px-md">
+      <h3 class="text-h5 leadership-text custom__heading-green">
+        Our team of seasoned professionals keep the vision in sight by bridging the gap between 
+        the Government and Private sector, ensuring that the right policies are in place to foster 
+        a thriving, sucessful and sustainable Agribusiness economy.
+      </h3>
+    </div>      
     </div>
 
     <section class="bg-grey-1">
@@ -411,4 +415,13 @@ export default {
   margin-top: 10px;
   margin-bottom: 30px;
 }
+
+@media(max-width:500px){
+
+.leadership-text{
+  font-size: 18px;
+  line-height: 1.4;
+}
+}
+
 </style>

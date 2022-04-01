@@ -39,7 +39,7 @@
     </div>
 
     <q-dialog full-width v-model="fixed">
-      <q-card style="height: 60%">
+      <q-card style="height: 70%">
         <div class="delp">
           <q-card-section>
             <!-- <div class="text-h6">{{ profile.name }}</div> -->
@@ -187,7 +187,7 @@ Mr Savara has served on several Nigerian national committees, including the 12- 
 Mr Savara is a Member of the Institute of Directors of Nigeria and a Fellow of the  Institute of Chartered Accountants of India.  
 `,
           state: "Ile de France",
-          img: "/images/rap.jpg",
+          img: "/images/rahul.jpg",
           previous:
             "https://bs-uploads.toptal.io/blackfish-uploads/components/image/content/file_file/file/157722/previous_company_logo-a2e4bba7a9d3357f6581c2ad6e72f0a1.svg"
         }
@@ -230,12 +230,12 @@ Mr Savara is a Member of the Institute of Directors of Nigeria and a Fellow of t
   position: relative;
   margin: 0 auto;
   padding: 1.5em 0 4em;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   list-style: none;
   text-align: center;
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
   gap: 2rem;
 }
@@ -361,7 +361,7 @@ Mr Savara is a Member of the Institute of Directors of Nigeria and a Fellow of t
 
   position: absolute;
   bottom: 4%;
-  left: 1%;
+  left: 9%;
   padding: 1rem;
   font-family: "FontAwesome";
   /* background-color: #00cc83; */

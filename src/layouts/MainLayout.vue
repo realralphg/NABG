@@ -52,6 +52,14 @@
             to="/partner"
             exact
           />
+          <!-- <q-route-tab
+            label="Board"
+            ripple
+            no-caps
+            class="gt-sm q-mx-sm my-font-poppins-light"
+            to="/Board"
+            exact
+          /> -->
           <q-route-tab
             label="News"
             ripple
@@ -189,7 +197,7 @@ export default {
   name: "MainLayout",
   data() {
     return {
-      leftDrawerOpen: false,
+      leftDrawerOpen: false
     };
   },
   computed: {
@@ -198,8 +206,8 @@ export default {
       if (size == "md" || size == "lg" || size == "xl") {
         return "q-px-xl ";
       } else return "";
-    },
-  },
+    }
+  }
 };
 </script>
 

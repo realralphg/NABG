@@ -26,11 +26,11 @@
         class="row"
         v-observe-visibility="{
           callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'a'),
-          once: true,
+          once: true
         }"
         :class="{
           'visible animated fadeInUp': showAnimationFor.a,
-          invisible: !showAnimationFor.a,
+          invisible: !showAnimationFor.a
         }"
       >
         <div
@@ -117,13 +117,22 @@
             label="Contact Us"
           />
 
-        <div class="text-caption text-grey-6">
-          <q-btn class="q-mt-sm text-green" no-caps small outline icon="mail" type="a" href="https://www.nabg.ng/webmail/" target="_blank">
-            <span class="q-pl-sm">Check Mail</span>
-          </q-btn> 
-        </div>          
+          <div class="text-caption text-grey-6">
+            <q-btn
+              class="q-mt-sm text-green"
+              no-caps
+              small
+              outline
+              icon="mail"
+              type="a"
+              href="https://www.nabg.ng/webmail/"
+              target="_blank"
+            >
+              <span class="q-pl-sm">Check Mail</span>
+            </q-btn>
+          </div>
         </div>
-        <div class="row">
+        <div class="row justify-center">
           <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
             <div class="text-body1 text-bold">About</div>
             <q-separator class="bg-grey-9" style="width: 50%" />
@@ -202,7 +211,9 @@
               Head Office: No 26 Lake Chad Crescent Maitama, Abuja Nigeria.
             </div>
             <div class="text-body2 q-mt-md">contact@nabg.ng</div>
-            <div class="text-body2 q-mt-md">+2348129929300 or +2348023591357</div>
+            <div class="text-body2 q-mt-md">
+              +2348129929300 or +2348023591357
+            </div>
           </div>
         </div>
         <q-separator class="bg-grey-9 q-px-xl q-mt-xl" />
@@ -225,129 +236,129 @@ export default {
       b: false,
       c: false,
       d: false,
-      e: false,
+      e: false
     },
     council: [
       {
         name: "Emmanuel Ijewere ",
         image: require("../../public/images/emmanuel.jpg"),
         role: "President",
-        organization: "NABG/Best Foods Ltd",
+        organization: "NABG/Best Foods Ltd"
       },
       {
         name: "Dr. Manzo Maigari",
         image: require("../../public/images/manzo.jpg"),
         role: "Director General",
-        organization: "NABG",
+        organization: "NABG"
       },
       {
         name: "Alh. Isa Tafida Mafindi",
         image: require("../../public/images/tafida.jpg"),
         role: "CEO",
-        organization: "Famag Jal Nigeria Ltd",
+        organization: "Famag Jal Nigeria Ltd"
       },
       {
         name: "Aniebe Achimugu",
         image: require("../../public/images/achimugu.jpg"),
         role: "President",
-        organization: "NACOTAN",
+        organization: "NACOTAN"
       },
       {
         name: "Arc Kabir Ibrahim",
         image: require("../../public/images/kabir.jpg"),
         role: "President of AFAN",
-        organization: "All Farms Asso. of Nigeria (AFAN)",
+        organization: "All Farms Asso. of Nigeria (AFAN)"
       },
       {
         name: "Dr. Graham Hefer",
         image: require("../../public/images/graham.jpg"),
         role: "MD",
-        organization: "Okomu Oil Palm Co Plc",
+        organization: "Okomu Oil Palm Co Plc"
       },
       {
         name: "Felix Nwabuko",
         image: require("../../public/images/felix.webp"),
         role: "MD",
-        organization: "Presco Plc",
+        organization: "Presco Plc"
       },
       {
         name: "M.D Abubakar",
         image: require("../../public/images/abubakar.jpg"),
         role: "Chairman",
-        organization: "L &Z Int. Farms Ltd",
+        organization: "L &Z Int. Farms Ltd"
       },
       {
         name: "Alh Abdulkarim Lawal Kaita",
         image: require("../../public/images/dangote.jpg"),
         role: "Group Executive Director",
-        organization: "Dansa Holdings Ltd",
-      },       
+        organization: "Dansa Holdings Ltd"
+      },
       {
         name: "Mr. Moochikal D Ramesh",
         image: require("../../public/images/Ramesh.jpg"),
         role: "CEO",
-        organization: "Agribusiness",
+        organization: "Agribusiness"
       },
       {
         name: "MuKul Mathur",
         image: require("../../public/images/mukul.png"),
         role: "Country Head",
-        organization: "Olam Nigeria Ltd.",
+        organization: "Olam Nigeria Ltd."
       },
       {
         name: "Olusegun Falade",
         image: require("../../public/images/olusegun.jpeg"),
         role: "Head Agric Unit",
-        organization: "Flour Mills PLC",
+        organization: "Flour Mills PLC"
       },
       {
         name: "Abubakar Sadiq Kassim",
         image: require("../../public/images/sadiq.jpg"),
         role: "Director",
-        organization: "Group Corporate Affairs/ Tropical General Investments",
+        organization: "Group Corporate Affairs/ Tropical General Investments"
       },
       {
         name: "Senator Adamu Adamu",
         image: require("../../public/images/adamu.jpg"),
         role: "Chair Senate Committee on Agriculture",
-        organization: "Nigeria Senate",
+        organization: "Nigeria Senate"
       },
       {
         name: "Senator Sabo Nakudu",
         image: require("../../public/images/nakudu.jpg"),
         role: "Vice Chair Senate Committee on Trade & Investment",
-        organization: "Nigeria Senate",
+        organization: "Nigeria Senate"
       },
       {
         name: "Thomas Etuh",
         image: require("../../public/images/thomas.jpg"),
         role: "President",
-        organization: "FEPSAN",
-      },     
+        organization: "FEPSAN"
+      },
       {
         name: "Yomi Jemibewon",
         image: require("../../public/images/yomi.jpg"),
         role: "Director",
-        organization: "Cardinal Stone Partners Ltd",
+        organization: "Cardinal Stone Partners Ltd"
       },
       {
         name: "Uchechukwu Okorie",
         image: require("../../public/images/okorie.jpg"),
         role: "Head Agribusiness Desk",
-        organization: "First Bank Nig Ltd",
-      },  
+        organization: "First Bank Nig Ltd"
+      },
       {
         name: "Nwaneri Olubukola",
         image: require("../../public/images/bukola.jpg"),
         role: "Director",
-        organization: "Green Rivers Farms Ltd.",
-      },      
+        organization: "Green Rivers Farms Ltd."
+      },
       {
         name: "Glory Adonese",
         image: require("../../public/images/placeholder.jpg"),
         role: "President",
-        organization: "Cross River State Women in Aquaculture",
-      },
+        organization: "Cross River State Women in Aquaculture"
+      }
     ],
     stakeholders: [
       "FARM ASSOCIATION",
@@ -361,13 +372,13 @@ export default {
       "CBN & COMMERCIAL BANKS",
       "INSURANCE",
       "UNIVERSITY & RESEARCH INSTITUTIONS",
-      "ALL AGRICULTURAL VALUE CHAIN STAKEHOLDERS",
-    ],
+      "ALL AGRICULTURAL VALUE CHAIN STAKEHOLDERS"
+    ]
   }),
   methods: {
     isViewableNow(isVisible, entry, section) {
       this.showAnimationFor[section] = isVisible;
-    },
+    }
   },
   computed: {
     screenRatioHeading() {
@@ -375,8 +386,8 @@ export default {
       if (size == "md" || size == "lg" || size == "xl") {
         return "text-h4";
       } else return "text-h5";
-    },
-  },
+    }
+  }
 };
 </script>
 

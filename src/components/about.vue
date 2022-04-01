@@ -18,11 +18,11 @@
           v-observe-visibility="{
             callback: (isVisible, entry) =>
               isViewableNow(isVisible, entry, 'a'),
-            once: true,
+            once: true
           }"
           :class="{
             'visible animated fadeInRight': showAnimationFor.a,
-            invisible: !showAnimationFor.a,
+            invisible: !showAnimationFor.a
           }"
         >
           <div class="col q-px-lg q-py-md">
@@ -109,11 +109,11 @@
         class="row mt-lg"
         v-observe-visibility="{
           callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'b'),
-          once: true,
+          once: true
         }"
         :class="{
           'visible animated fadeInLeft': showAnimationFor.b,
-          invisible: !showAnimationFor.b,
+          invisible: !showAnimationFor.b
         }"
       >
         <div class="col-md-8 col-sm-12 col-xs-12 q-px-lg q-py-md">
@@ -135,7 +135,7 @@
                   <div
                     class="text-body2 text-grey-8 text-center my-font-poppins-light"
                   >
-                    NABG/Best Foods Ltd 
+                    NABG/Best Foods Ltd
                   </div>
                 </q-card-section>
               </q-card>
@@ -274,11 +274,11 @@
         class="row"
         v-observe-visibility="{
           callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'c'),
-          once: true,
+          once: true
         }"
         :class="{
           'visible animated fadeInRight': showAnimationFor.c,
-          invisible: !showAnimationFor.c,
+          invisible: !showAnimationFor.c
         }"
       >
         <div class="col-md-6 col-sm-12 col-xs-12 q-px-lg q-py-md">
@@ -336,14 +336,22 @@
             label="Contact Us"
           />
 
-        <div class="text-caption text-grey-6">
-          <q-btn class="q-mt-sm text-green" no-caps small outline icon="mail" type="a" href="https://www.nabg.ng/webmail/" target="_blank">
-            <span class="q-pl-sm">Check Mail</span>
-          </q-btn> 
+          <div class="text-caption text-grey-6">
+            <q-btn
+              class="q-mt-sm text-green"
+              no-caps
+              small
+              outline
+              icon="mail"
+              type="a"
+              href="https://www.nabg.ng/webmail/"
+              target="_blank"
+            >
+              <span class="q-pl-sm">Check Mail</span>
+            </q-btn>
+          </div>
         </div>
-
-        </div>
-        <div class="row">
+        <div class="row justify-center">
           <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
             <div class="text-body1 text-bold">About</div>
             <q-separator class="bg-grey-9" style="width: 50%" />
@@ -422,7 +430,9 @@
               Head Office: No 26 Lake Chad Crescent Maitama, Abuja Nigeria.
             </div>
             <div class="text-body2 q-mt-md">contact@nabg.ng</div>
-            <div class="text-body2 q-mt-md">+2348129929300 or +2348023591357</div>
+            <div class="text-body2 q-mt-md">
+              +2348129929300 or +2348023591357
+            </div>
           </div>
         </div>
         <q-separator class="bg-grey-9 q-px-xl q-mt-xl" />
@@ -445,13 +455,13 @@ export default {
       b: false,
       c: false,
       d: false,
-      e: false,
-    },
+      e: false
+    }
   }),
   methods: {
     isViewableNow(isVisible, entry, section) {
       this.showAnimationFor[section] = isVisible;
-    },
+    }
   },
   computed: {
     screenRatioHeading() {
@@ -459,8 +469,8 @@ export default {
       if (size == "md" || size == "lg" || size == "xl") {
         return "text-h4";
       } else return "text-h5";
-    },
-  },
+    }
+  }
 };
 </script>
 

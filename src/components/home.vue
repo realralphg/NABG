@@ -76,12 +76,12 @@
       <div
         class="row"
         v-observe-visibility="{
-          callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'b'),
+          callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'b')
         }"
         :class="{
           'visible animated slideInLeft': showAnimationFor.b,
           invisible: !showAnimationFor.b,
-          once: true,
+          once: true
         }"
       >
         <div class="col-md-5 col-sm-12 col-xs-12 q-px-lg q-py-md">
@@ -161,11 +161,11 @@
           v-observe-visibility="{
             callback: (isVisible, entry) =>
               isViewableNow(isVisible, entry, 'c'),
-            once: true,
+            once: true
           }"
           :class="{
             'visible animated slideInRight': showAnimationFor.c,
-            invisible: !showAnimationFor.c,
+            invisible: !showAnimationFor.c
           }"
           class="col-md-3 col-sm-12 col-xs-12 q-px-lg q-py-md column justify-center items-center my-font-poppins-extraBold"
         >
@@ -305,11 +305,11 @@
         class="row q-my-sm justify-center"
         v-observe-visibility="{
           callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'd'),
-          once: true,
+          once: true
         }"
         :class="{
           'visible animated slideInLeft': showAnimationFor.d,
-          invisible: !showAnimationFor.d,
+          invisible: !showAnimationFor.d
         }"
       >
         <!-- <div class="col-md-3 col-sm-12 col-xs-12 q-px-lg q-py-md">
@@ -380,7 +380,7 @@
             </q-card-section>
           </q-card>
         </div>
-        
+
         <!-- <div class="col-md-3 col-sm-12 col-xs-12 q-px-lg q-py-md">
           <q-card flat square>
             <q-img contain height="200px" src="/images/salamatu.png" />
@@ -403,9 +403,7 @@
             </q-card-section>
           </q-card>
         </div> -->
-
       </div>
-
 
       <div class="row justify-center q-mt-xl q-py-md">
         <q-btn
@@ -432,11 +430,11 @@
         class="row q-my-sm"
         v-observe-visibility="{
           callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'e'),
-          once: true,
+          once: true
         }"
         :class="{
           'visible animated slideInRight': showAnimationFor.e,
-          invisible: !showAnimationFor.e,
+          invisible: !showAnimationFor.e
         }"
       >
         <div class="col-md-4 col-sm-12 col-xs-12 q-px-lg q-py-md">
@@ -587,14 +585,22 @@
             label="Contact Us"
           />
 
-        <div class="text-caption text-grey-6">
-          <q-btn class="q-mt-sm text-green" no-caps small outline icon="mail" type="a" href="https://www.nabg.ng/webmail/" target="_blank">
-            <span class="q-pl-sm">Check Mail</span>
-          </q-btn> 
+          <div class="text-caption text-grey-6">
+            <q-btn
+              class="q-mt-sm text-green"
+              no-caps
+              small
+              outline
+              icon="mail"
+              type="a"
+              href="https://www.nabg.ng/webmail/"
+              target="_blank"
+            >
+              <span class="q-pl-sm">Check Mail</span>
+            </q-btn>
+          </div>
         </div>
-                  
-        </div>
-        <div class="row">
+        <div class="row justify-center">
           <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
             <div class="text-body1 text-bold">About</div>
             <q-separator class="bg-grey-9" style="width: 50%" />
@@ -673,7 +679,9 @@
               Head Office: No 26 Lake Chad Crescent Maitama, Abuja Nigeria.
             </div>
             <div class="text-body2 q-mt-md">contact@nabg.ng</div>
-            <div class="text-body2 q-mt-md">+2348129929300 or +2348023591357</div>
+            <div class="text-body2 q-mt-md">
+              +2348129929300 or +2348023591357
+            </div>
           </div>
         </div>
         <q-separator class="bg-grey-9 q-px-xl q-mt-xl" />
@@ -694,13 +702,13 @@ export default {
       b: false,
       c: false,
       d: false,
-      e: false,
-    },
+      e: false
+    }
   }),
   methods: {
     isViewableNow(isVisible, entry, section) {
       this.showAnimationFor[section] = isVisible;
-    },
+    }
   },
   computed: {
     screenRatioHeading() {
@@ -708,8 +716,8 @@ export default {
       if (size == "md" || size == "lg" || size == "xl") {
         return "text-h4";
       } else return "text-h5";
-    },
-  },
+    }
+  }
 };
 </script>
 

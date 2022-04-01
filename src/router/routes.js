@@ -21,6 +21,10 @@ const routes = [
         path: '/partner',
         component: () => import('pages/Partner.vue')
       },
+       {
+        path: '/board',
+        component: () => import('pages/Board.vue')
+      },
       {
         path: '/news',
         component: () => import('pages/News.vue')

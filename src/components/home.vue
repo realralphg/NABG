@@ -672,15 +672,19 @@
               <span class="q-ml-sm">Linkedin</span>
             </div>
           </div>
+          <!-- Contact -->
           <div class="col-md-2 col-sm-12 col-xs-12 q-pt-md my-font-nav">
             <div class="text-body1 typo1 text-bold my-font">Contact Info</div>
-            <q-separator class="bg-grey-9" style="width: 50%" />
-            <div class="text-body2 typo1 q-mt-md">
-              Head Office: No 26 Lake Chad Crescent Maitama, Abuja Nigeria.
-            </div>
+              <q-separator class="bg-grey-9" style="width: 50%" />
+              <div class="text-body2 typo1 q-mt-md">
+                Nigeria Agribusiness Group (NABG) Secretariat, <br>
+                2F Suite 7, 10 & 11 Katsina House <br>
+                80 Ralph Shodiende Street, <br>
+                Central Business District, Abuja. <br>
+              </div>
             <div class="text-body2 q-mt-md">contact@nabg.ng</div>
             <div class="text-body2 q-mt-md">
-              +2348129929300 or +2348023591357
+              +2347037725252 or +2348023591357
             </div>
           </div>
         </div>

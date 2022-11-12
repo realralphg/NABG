@@ -27,9 +27,15 @@
     <section>
       <div class="row">
         <div class="col-md-4 col-sm-12 col-xs-12 q-px-lg q-py-md">
-          <q-card class="my-card bg-grey-10">
+          <q-card class=" q-mx-sm bg-grey-10">
             <q-card-section class="row justify-center q-py-xl">
-              <img src="/images/planting.svg" height="100" width="100" alt="" />
+              <img
+                src="/images/planting.svg"
+                height="100"
+                width="100"
+                alt=""
+                class="q-mb-md"
+              />
               <div class="text-body1 text-white my-font-poppins-bold">
                 Growing Nigeria’s Agricultural Economy
               </div>
@@ -41,9 +47,15 @@
           </q-card>
         </div>
         <div class="col-md-4 col-sm-12 col-xs-12 q-px-lg q-py-md">
-          <q-card class="my-card bg-green">
+          <q-card class=" bg-green">
             <q-card-section class="row justify-center q-py-xl">
-              <img src="/images/tractor.svg" height="100" width="100" alt="" />
+              <img
+                src="/images/tractor.svg"
+                height="100"
+                width="100"
+                alt=""
+                class="q-mb-md"
+              />
               <div class="text-body1 text-white my-font-poppins-bold">
                 Creating Thousands of Jobs for the Youth
               </div>
@@ -56,9 +68,15 @@
           </q-card>
         </div>
         <div class="col-md-4 col-sm-12 col-xs-12 q-px-lg q-py-md">
-          <q-card class="my-card bg-grey-10">
+          <q-card class="bg-grey-10">
             <q-card-section class="row justify-center q-py-xl">
-              <img src="/images/money.svg" height="100" width="100" alt="" />
+              <img
+                src="/images/money.svg"
+                height="100"
+                width="100"
+                alt=""
+                class="q-mb-md"
+              />
               <div class="text-body1 text-white my-font-poppins-bold">
                 Lifting Millions of Nigerians out of Poverty
               </div>
@@ -117,13 +135,28 @@
           ></q-card>
         </div>
         <div
-          class="col-md-5 col-sm-12 col-xs-12 q-px-lg q-py-md custom__overflow"
+          class="col-md-5 col-sm-12 q-mt-sm col-xs-12 q-px-lg q-py-md custom__overflow"
         >
-          <q-img
+        <VueSlickCarousel
+            :dots="true"
+            :arrows='false'
+            :slidesToShow="1"
+            autoplay: true
+            autoplaySpeed=3000
+            
+          >
+          <q-img height="300px" src="/images/kenya-1.png" />
+          <q-img height="300px" src="/images/nab10.jpeg" />
+          <q-img height="300px" src="/images/nab5.jpeg" />
+          <q-img height="300px" src="/images/nab9.jpeg" />
+            
+           
+        </VueSlickCarousel>
+          <!-- <q-img
             src="/images/kenya-1.png"
             style="width: 100%; height: 100%"
             contain
-          ></q-img>
+          ></q-img> -->
         </div>
       </div>
     </section>
@@ -155,6 +188,218 @@
     </section>
 
     <q-separator class="q-mx-xl" color="grey-4" spaced />
+
+    <section>
+      <h3
+        :class="screenRatioHeading"
+        class="text-center q-pt-xl container my-font-poppins-boldItalic"
+      >
+        BILL AND MELINDA
+        <span class="text-green text-h4 my-font-poppins-extraBold">GATES</span>
+        FOUNDATION
+        <span class="text-green text-h4 my-font-poppins-extraBold">(BMGF)</span
+        >/NIGERIA
+        <span class="text-green text-h4 my-font-poppins-extraBold"
+          >AGRIBUSINESS</span
+        >
+        GROUP
+        <span class="text-green text-h4 my-font-poppins-extraBold">(NABG)</span>
+        ADVOCACY FOR SMALL-SCALE PRODUCERS PROJECT
+      </h3>
+
+      <div class="q-mt-lg">
+        <p
+          class="text-body1 text-center container text-grey-8 my-font-poppins-light"
+        >
+          The Nigeria Agribusiness Group (NABG) in partnership with Bill and
+          Melinda Gates Foundation (BMGF) has birthed the Promotion of
+          Agribusiness Advocacy for Small-scale Producers project, which has
+          been assigned a unique identifier by the acronym SSPs to run until
+          2024. The SSPs project will support the BMGF strategy in ensuring that
+          public and private sector policy advocacy can drive scale and
+          inclusion of small holder farmers and small scale producers in Nigeria
+          with the following strategic goals; i. Increase agricultural
+          productivity for SHFs; ii. Increase SHF household income; iii.
+          Increase equitable consumption of a safe, affordable, nutritious diet
+          year-round; iv. Increase women's empowerment in agriculture.
+        </p>
+      </div>
+
+      <div class="row flexer q-py-xl">
+        <div class="col-md-1 col-sm-12 col-xs-12 gt-sm column justify-center">
+          <q-card
+            flat
+            square
+            class="bg-green"
+            style="
+              height: 40%;
+              margin-right: -100%;
+              z-index: -1;
+              margin-left: 100px;
+            "
+          ></q-card>
+        </div>
+        <div
+          class="col-md-5 col-sm-12 removeM col-xs-12 q-px-lg q-mt-xl q-py-md custom__overflow"
+        >
+          <iframe
+            width="100%"
+            height="400px"
+            src="https://www.youtube.com/embed/Iqt21A0SzvU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col-md-5 col-sm-12 col-xs-12  q-px-lg q-py-md">
+          <h3
+            :class="screenRatioHeading"
+            class="my-font-poppins-boldItalic smart"
+          >
+            Climate
+            <span class="text-green text-h4 my-font-poppins-extraBold"
+              >Smart</span
+            >
+            Agriculture
+          </h3>
+          <strong>The Climate Challenge</strong>
+          <p class="text-body1 text-justify text-grey-8 my-font-poppins-light">
+            Nigeria, like many other African countries, finds itself amid a
+            climate emergency. Africa’s drylands, which cover about 60% of the
+            continent, are warming at a rate twice the global average, putting
+            about 500 million people at risk,11 and compromising about 4% of GDP
+            by 2040. Even if climate change mitigation efforts maintain global
+            warming at sub-2°C, the continent will still face climate change
+            adaptation costs of about US$ 50 billion per year by 2050. The
+            reality of climate change has been experienced in Africa in the last
+            few decades. Flooding on the continent has increased by 500% since
+            the 1990s, with many of them being extreme floods. Droughts are
+            becoming more severe also, with countries in the horn of Africa and
+            Sahel, like Somalia suffering agriculture losses of about $1.5
+            billion and widespread malnutrition.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class=" text-center container">
+        <h3 :class="screenRatioHeading" class="my-font-poppins-boldItalic">
+          Workshop On Developing A National Framework For
+          <span class="text-green text-h4 my-font-poppins-extraBold"
+            >Climate-Smart</span
+          >
+          Agriculture Theme: Cleaner, Safer, Rewarding Agriculture
+        </h3>
+
+        <p class="text-body1 text-center  text-grey-8 my-font-poppins-light">
+          The Nigeria Agribusiness Group (NABG) in collaboration with the
+          Federal Ministry of Agriculture & Rural Development proposes a two (2)
+          day roundtable discussion with stakeholders and technical experts to
+          deliberate and draft a National Climate Smart Agriculture Framework
+          (NCSAF) for the sector. The NCSAF is an approach to developing the
+          technical, policy and investment conditions to achieve sustainable
+          agricultural development for food security under a changing climate.
+          This Framework will be an attempt to analyze and define activities
+          that will take into account the three pillars of CSA simultaneously.
+          It seeks to focus on harmonizing climate smart agriculture along its
+          value chain nationally.
+        </p>
+
+        <div class="q-pt-lg">
+          <VueSlickCarousel
+            :dots="true"
+            :slidesToShow="6"
+            autoplay: true
+            autoplaySpeed=3000
+            :responsive="[
+              {
+                breakpoint: 1524,
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 3,
+                  infinite: true,
+                  dots: true
+                }
+              },
+              {
+                breakpoint: 1000,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 2,
+                  initialSlide: 2
+                }
+              },
+              {
+                breakpoint: 800,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                  initialSlide: 2
+                }
+              },
+
+              {
+                breakpoint: 500,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]"
+          >
+            <div class="">
+              <q-card class="my_card q-mx-sm" bordered>
+                <q-img height="300px" src="/images/nab7.jpeg" />
+              </q-card>
+            </div>
+
+            <div class="">
+              <q-card class="my_card q-mx-sm" bordered>
+                <q-img height="300px" src="/images/nab1.jpeg" />
+              </q-card>
+            </div>
+            <div class="">
+              <q-card class="my_card q-mx-sm" bordered>
+                <q-img height="300px" src="/images/nab10.jpeg" />
+              </q-card>
+            </div>
+            <div class="">
+              <q-card class="my_card q-mx-sm" bordered>
+                <q-img height="300px" src="/images/nab3.jpeg" />
+              </q-card>
+            </div>
+
+            <div class="">
+              <q-card class="my_card q-mx-sm" bordered>
+                <q-img height="300px" src="/images/nab8.jpeg" />
+              </q-card>
+            </div>
+            <div class="">
+              <q-card class="my_card q-mx-sm" bordered>
+                <q-img height="300px" src="/images/nab2.jpeg" />
+              </q-card>
+            </div>
+            <div class="">
+              <q-card class="my_card q-mx-sm" bordered>
+                <q-img height="300px" src="/images/nab6.jpeg" />
+              </q-card>
+            </div>
+            <div class="">
+              <q-card class="my_card q-mx-sm" bordered>
+                <q-img height="300px" src="/images/nab5.jpeg" />
+              </q-card>
+            </div>
+
+            <div class="">
+              <q-card class="my_card q-mx-sm" bordered>
+                <q-img height="300px" src="/images/nab9.jpeg" />
+              </q-card>
+            </div>
+          </VueSlickCarousel>
+        </div>
+      </div>
+    </section>
     <section class="q-my-xl">
       <div class="row">
         <div
@@ -420,13 +665,681 @@
       </div>
     </section>
 
-    <section>
+    <section class="news">
       <h3 class="text-center my-font-poppins-thin" :class="screenRatioHeading">
         <span class="my-font-poppins-thin"
           >New<span class="text-green my-font-poppins-extraBold">s</span></span
         >
       </h3>
-      <div
+      <div class="container">
+        <VueSlickCarousel
+          :dots="true"
+          :slidesToShow="3"
+          :responsive="[
+            {
+              breakpoint: 1524,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 1000,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2
+              }
+            },
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]"
+        >
+          <div class="">
+            <q-card class="my-card q-mx-sm" bordered>
+              <q-img
+                height="200px"
+                src="https://leadership.ng/wp-content/uploads/2022/07/Nigerian-AgriBusiness-Group-NABG-1-1140x570.jpg"
+              />
+              <q-card-section>
+                <div class="text-subtitle2 row items-center justify-between">
+                  <span class="text-grey my-font-poppins-light">
+                    <q-icon
+                      name="query_builder"
+                      color="grey"
+                      size="large"
+                      class="q-mr-sm"
+                    />2 days ago</span
+                  >
+                  <q-chip
+                    class="my-font-poppins-bold"
+                    label="Agriculture"
+                    ripple
+                    color="grey-3"
+                    text-color="purple"
+                  />
+                </div>
+                <div
+                  class="my-font-poppins-regular text-green text-body1 q-mt-sm q-mb-xs"
+                >
+                 NABG, Others To Deploy Climate-smart Agriculture To Fight Poverty
+
+                </div>
+                <div class="text-caption text-grey-8 my-font-poppins-light">
+                 The Nigerian AgriBusiness Group (NABG) and other stakeholders in the agriculture sector have discussed on how to deploy climate- smart agriculture to improve food productivity, create job and fight the scourge of poverty in Nigeria...
+                </div>
+              </q-card-section>
+              <q-card-actions>
+                <a
+                  target="_blank"
+                  class="read"
+                  href="https://leadership.ng/nabg-others-to-deploy-climate-smart-agriculture-to-fight-poverty/"
+                  >Read More</a
+                >
+                <q-space />
+              </q-card-actions>
+            </q-card>
+          </div>
+          
+          <div class="">
+            <q-card class="my-card q-mx-sm" bordered>
+              <q-img
+                height="200px"
+                src="https://cdn.vanguardngr.com/wp-content/uploads/2022/07/images-54.jpeg?width=350&auto_optimize=medium"
+              />
+              <q-card-section>
+                <div class="text-subtitle2 row items-center justify-between">
+                  <span class="text-grey my-font-poppins-light">
+                    <q-icon
+                      name="query_builder"
+                      color="grey"
+                      size="large"
+                      class="q-mr-sm"
+                    />2 days ago</span
+                  >
+                  <q-chip
+                    class="my-font-poppins-bold"
+                    label="Agriculture"
+                    ripple
+                    color="grey-3"
+                    text-color="purple"
+                  />
+                </div>
+                <div
+                  class="my-font-poppins-regular text-green text-body1 q-mt-sm q-mb-xs"
+                >
+                  We must fight climate change with climate-smart agriculture to sustain food system — Dr Maigari
+                </div>
+                <div class="text-caption text-grey-8 my-font-poppins-light">
+                 The Director General, Nigeria Agribusiness Group, NABG, Dr Manzo Maigari, said all   stakeholders must rise to fight climate change affecting farmers’ productivity with climate -smart agriculture to sustain the food system...
+                </div>
+              </q-card-section>
+              <q-card-actions>
+                <a
+                  target="_blank"
+                  class="read"
+                  href="https://www.vanguardngr.com/2022/07/we-must-fight-climate-change-with-climate-smart-agriculture-to-sustain-food-system-dr-maigari/"
+                  >Read More</a
+                >
+                <q-space />
+              </q-card-actions>
+            </q-card>
+          </div>
+         
+          <div class="">
+            <q-card class="my-card q-mx-sm" bordered>
+              <q-img
+                height="200px"
+                src="https://guardian.ng/wp-content/uploads/2020/07/shutterstock_1106271755-800x450.jpg"
+              />
+              <q-card-section>
+                <div class="text-subtitle2 row items-center justify-between">
+                  <span class="text-grey my-font-poppins-light">
+                    <q-icon
+                      name="query_builder"
+                      color="grey"
+                      size="large"
+                      class="q-mr-sm"
+                    />2 days ago</span
+                  >
+                  <q-chip
+                    class="my-font-poppins-bold"
+                    label="Agriculture"
+                    ripple
+                    color="grey-3"
+                    text-color="purple"
+                  />
+                </div>
+                <div
+                  class="my-font-poppins-regular text-green text-body1 q-mt-sm q-mb-xs"
+                >
+                  NABG to deploy climate smart agric techniques in food production
+                </div>
+                <div class="text-caption text-grey-8 my-font-poppins-light">
+                 To reduce the impact of climate change on food production, the Nigeria Agribusiness Group (NABG) has unveiled plans to deploy climate-smart agricultural techniques to boost food production in the country...
+                </div>
+              </q-card-section>
+              <q-card-actions>
+                <a
+                  target="_blank"
+                  class="read"
+                  href="https://guardian.ng/business-services/nabg-to-deploy-climate-smart-agric-techniques-in-food-production/"
+                  >Read More</a
+                >
+                <q-space />
+              </q-card-actions>
+            </q-card>
+          </div>
+          <div class="">
+            <q-card class="my-card q-mx-sm" bordered>
+              <q-img
+                height="200px"
+                src="https://i0.wp.com/www.thisdaylive.com/wp-content/uploads/Climate-Change.png?w=949&ssl=1"
+              />
+              <q-card-section>
+                <div class="text-subtitle2 row items-center justify-between">
+                  <span class="text-grey my-font-poppins-light">
+                    <q-icon
+                      name="query_builder"
+                      color="grey"
+                      size="large"
+                      class="q-mr-sm"
+                    />3 days ago</span
+                  >
+                  <q-chip
+                    class="my-font-poppins-bold"
+                    label="Agriculture"
+                    ripple
+                    color="grey-3"
+                    text-color="purple"
+                  />
+                </div>
+                <div
+                  class="my-font-poppins-regular text-green text-body1 q-mt-sm q-mb-xs"
+                >
+                  Group Seeks to Tackle Climate Change Via Smart Agriculture
+                </div>
+                <div class="text-caption text-grey-8 my-font-poppins-light">
+                 The Nigeria Agribusiness Group (NABG) has teamed up with other stakeholders in the agricultural sector to reduce the impact of climate change on agribusiness through the adoption of the Climate -Smart Agriculture approach...
+                </div>
+              </q-card-section>
+              <q-card-actions>
+                <a
+                  target="_blank"
+                  class="read"
+                  href="https://www.thisdaylive.com/index.php/2022/07/13/group-seeks-to-tackle-climate-change-via-smart-agriculture/"
+                  >Read More</a
+                >
+                <q-space />
+              </q-card-actions>
+            </q-card>
+          </div>
+          <div class="">
+            <q-card class="my-card q-mx-sm" bordered>
+              <q-img
+                height="200px"
+                src="https://cdn.vanguardngr.com/wp-content/uploads/2022/07/images-51.jpeg?width=641&auto_optimize=medium"
+              />
+              <q-card-section>
+                <div class="text-subtitle2 row items-center justify-between">
+                  <span class="text-grey my-font-poppins-light">
+                    <q-icon
+                      name="query_builder"
+                      color="grey"
+                      size="large"
+                      class="q-mr-sm"
+                    />3 days ago</span
+                  >
+                  <q-chip
+                    class="my-font-poppins-bold"
+                    label="Agriculture"
+                    ripple
+                    color="grey-3"
+                    text-color="purple"
+                  />
+                </div>
+                <div
+                  class="my-font-poppins-regular text-green text-body1 q-mt-sm q-mb-xs"
+                >
+                  NABG leads others to reduce climate change impact with Climate-Smart Agriculture
+                </div>
+                <div class="text-caption text-grey-8 my-font-poppins-light">
+                  NABG with concern over the toll and impact of devastating climate change on farmers’ productivity in Nigeria organised a 2-day Workshop on Developing a National Framework for Climate-Smart Agriculture with theme ‘Cleaner, safer, rewarding agriculture’ held from July 7-8, 2022, in Abuja...
+                </div>
+              </q-card-section>
+              <q-card-actions>
+                <a
+                  target="_blank"
+                  class="read"
+                  href="https://www.vanguardngr.com/2022/07/nabg-leads-others-to-reduce-climate-change-impact-with-climate-smart-agriculture/amp/"
+                  >Read More</a
+                >
+                <q-space />
+              </q-card-actions>
+            </q-card>
+          </div>
+          <div class="">
+            <q-card class="my-card q-mx-sm" bordered>
+              <q-img
+                height="200px"
+                src="https://cdn.vanguardngr.com/wp-content/uploads/2020/06/Food-1.jpg?width=949&auto_optimize=medium"
+              />
+              <q-card-section>
+                <div class="text-subtitle2 row items-center justify-between">
+                  <span class="text-grey my-font-poppins-light">
+                    <q-icon
+                      name="query_builder"
+                      color="grey"
+                      size="large"
+                      class="q-mr-sm"
+                    />3 days ago</span
+                  >
+                  <q-chip
+                    class="my-font-poppins-bold"
+                    label="Agriculture"
+                    ripple
+                    color="grey-3"
+                    text-color="purple"
+                  />
+                </div>
+                <div
+                  class="my-font-poppins-regular text-green text-body1 q-mt-sm q-mb-xs"
+                >
+                  FG’s synergy with private sector’ll tackle hunger storm— NABG
+                </div>
+                <div class="text-caption text-grey-8 my-font-poppins-light">
+                  As Nigerians face serious food production challenges, the Nigeria Agribusiness Group, NABG,  Thursday, called on the Federal Government to strengthen its synergy with the private sector to tackle the raging hunger storm across the country...
+                </div>
+              </q-card-section>
+              <q-card-actions>
+                <a
+                  target="_blank"
+                  class="read"
+                  href="https://www.vanguardngr.com/2022/07/fgs-synergy-with-private-sectorll-tackle-hunger-storm-nabg/"
+                  >Read More</a
+                >
+                <q-space />
+              </q-card-actions>
+            </q-card>
+          </div>
+          <div class="">
+            <q-card class="my-card q-mx-sm" bordered>
+              <q-img
+                height="200px"
+                src="http://db.zs-intern.de/archive/aWfmxfRhV9MxNYQ4eTCnhTLMb4msPm9xFebTfNVV.jpg"
+              />
+              <q-card-section>
+                <div class="text-subtitle2 row items-center justify-between">
+                  <span class="text-grey my-font-poppins-light">
+                    <q-icon
+                      name="query_builder"
+                      color="grey"
+                      size="large"
+                      class="q-mr-sm"
+                    />3 days ago</span
+                  >
+                  <q-chip
+                    class="my-font-poppins-bold"
+                    label="Agriculture"
+                    ripple
+                    color="grey-3"
+                    text-color="purple"
+                  />
+                </div>
+                <div
+                  class="my-font-poppins-regular text-green text-body1 q-mt-sm q-mb-xs"
+                >
+                  Hunger: Experts brainstorm on how to tackle food crisis
+                </div>
+                <div class="text-caption text-grey-8 my-font-poppins-light">
+                  Led by the Nigerian AgriBusiness Group (NABG), the experts dissected the problems at a two-day workshop in Abuja with the theme, ‘Cleaner, safer, rewarding agriculture’, and resolved on how to develop a national framework on climate -smart agriculture...
+                </div>
+              </q-card-section>
+              <q-card-actions>
+                <a
+                  target="_blank"
+                  class="read"
+                  href="https://www.sunnewsonline.com/hunger-experts-brainstorm-on-how-to-tackle-food-crisis/"
+                  >Read More</a
+                >
+                <q-space />
+              </q-card-actions>
+            </q-card>
+          </div>
+          <div class="">
+            <q-card class="my-card q-mx-sm" bordered>
+              <q-img
+                height="200px"
+                src="https://i0.wp.com/www.blueprint.ng/wp-content/uploads/2022/02/Farmers-at-Work-in-their-Various-Farms-768x461-1.jpg?resize=678%2C381&ssl=1"
+              />
+              <q-card-section>
+                <div class="text-subtitle2 row items-center justify-between">
+                  <span class="text-grey my-font-poppins-light">
+                    <q-icon
+                      name="query_builder"
+                      color="grey"
+                      size="large"
+                      class="q-mr-sm"
+                    />3 days ago</span
+                  >
+                  <q-chip
+                    class="my-font-poppins-bold"
+                    label="Agriculture"
+                    ripple
+                    color="grey-3"
+                    text-color="purple"
+                  />
+                </div>
+                <div
+                  class="my-font-poppins-regular text-green text-body1 q-mt-sm q-mb-xs"
+                >
+                  NABG, stakeholders to deploy climate-smart agriculture to
+                  fight poverty
+                </div>
+                <div class="text-caption text-grey-8 my-font-poppins-light">
+                  The Nigerian AgriBusiness Group (NABG) and other stakeholders
+                  in the agriculture sector have resolved to deploy
+                  climate-smart agriculture to improve food productivity, create
+                  job and fight the scourge of poverty in Nigeria...
+                </div>
+              </q-card-section>
+              <q-card-actions>
+                <a
+                  target="_blank"
+                  class="read"
+                  href="https://www.blueprint.ng/nabg-stakeholders-to-deploy-climate-smart-agriculture-to-fight-poverty/"
+                  >Read More</a
+                >
+                <q-space />
+              </q-card-actions>
+            </q-card>
+          </div>
+          
+          <div class="">
+            <q-card class="my-card q-mx-sm" bordered>
+              <q-img
+                height="200px"
+                src="https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/assets/2018/02/26-02-2018_FAO-SouthSudan.jpg/image1170x530cropped.jpg"
+              />
+              <q-card-section>
+                <div class="text-subtitle2 row items-center justify-between">
+                  <span class="text-grey my-font-poppins-light">
+                    <q-icon
+                      name="query_builder"
+                      color="grey"
+                      size="large"
+                      class="q-mr-sm"
+                    />3 days ago</span
+                  >
+                  <q-chip
+                    class="my-font-poppins-bold"
+                    label="Agriculture"
+                    ripple
+                    color="grey-3"
+                    text-color="purple"
+                  />
+                </div>
+                <div
+                  class="my-font-poppins-regular text-green text-body1 q-mt-sm q-mb-xs"
+                >
+                  Hunger: Experts brainstorm on how to tackle food crisis
+                </div>
+                <div class="text-caption text-grey-8 my-font-poppins-light">
+                  Led by the Nigerian AgriBusiness Group (NABG), the experts
+                  dissected the problems at a two-day workshop in Abuja with the
+                  theme, ‘Cleaner, safer, rewarding agriculture’, and resolved
+                  on how to develop a national framework on climate ...
+                </div>
+              </q-card-section>
+              <q-card-actions>
+                <a
+                  target="_blank"
+                  class="read"
+                  href="https://www.sunnewsonline.com/hunger-experts-brainstorm-on-how-to-tackle-food-crisis/"
+                  >Read More</a
+                >
+                <q-space />
+              </q-card-actions>
+            </q-card>
+          </div>
+          <div class="">
+            <q-card class="my-card q-mx-sm" bordered>
+              <q-img
+                height="200px"
+                src="https://cdn.vanguardngr.com/wp-content/uploads/2020/06/Food-1.jpg?width=949&auto_optimize=medium"
+              />
+              <q-card-section>
+                <div class="text-subtitle2 row items-center justify-between">
+                  <span class="text-grey my-font-poppins-light">
+                    <q-icon
+                      name="query_builder"
+                      color="grey"
+                      size="large"
+                      class="q-mr-sm"
+                    />3 days ago</span
+                  >
+                  <q-chip
+                    class="my-font-poppins-bold"
+                    label="Agriculture"
+                    ripple
+                    color="grey-3"
+                    text-color="purple"
+                  />
+                </div>
+                <div
+                  class="my-font-poppins-regular text-green text-body1 q-mt-sm q-mb-xs"
+                >
+                  FG’s synergy with private sector’ll tackle hunger storm— NABG
+                </div>
+                <div class="text-caption text-grey-8 my-font-poppins-light">
+                  As Nigerians face serious food production challenges, the
+                  Nigeria Agribusiness Group, NABG, Thursday, called on the
+                  Federal Government to strengthen its synergy with the private
+                  sector to tackle the raging hunger storm across the country...
+                </div>
+              </q-card-section>
+              <q-card-actions>
+                <a
+                  target="_blank"
+                  class="read"
+                  href="https://www.vanguardngr.com/2022/07/fgs-synergy-with-private-sectorll-tackle-hunger-storm-nabg/"
+                  >Read More</a
+                >
+                <q-space />
+              </q-card-actions>
+            </q-card>
+          </div>
+          <div class="">
+            <q-card class="my-card q-mx-sm" bordered>
+              <q-img
+                height="200px"
+                src="http://www.environewsnigeria.com/wp-content/uploads/2022/07/Manzo-Maigari.jpg"
+              />
+              <q-card-section>
+                <div class="text-subtitle2 row items-center justify-between">
+                  <span class="text-grey my-font-poppins-light">
+                    <q-icon
+                      name="query_builder"
+                      color="grey"
+                      size="large"
+                      class="q-mr-sm"
+                    />3 days ago</span
+                  >
+                  <q-chip
+                    class="my-font-poppins-bold"
+                    label="Agriculture"
+                    ripple
+                    color="grey-3"
+                    text-color="purple"
+                  />
+                </div>
+                <div
+                  class="my-font-poppins-regular text-green text-body1 q-mt-sm q-mb-xs"
+                >
+                  NABG, Stakeholders to fight poverty via climate-smart
+                  agriculture
+                </div>
+                <div class="text-caption text-grey-8 my-font-poppins-light">
+                  The Nigerian AgriBusiness Group (NABG) and other stakeholders
+                  in the agriculture sector have brainstormed on how to deploy
+                  climate- smart agriculture to improve food productivity,
+                  create job and fight the scourge of poverty in Nigeria...
+                </div>
+              </q-card-section>
+              <q-card-actions>
+                <a
+                  target="_blank"
+                  class="read"
+                  href="https://humanitarianvoice.com/2022/07/08/nabg-stakeholders-to-fight-poverty-via-climate-smart-agriculture/"
+                  >Read More</a
+                >
+                <q-space />
+              </q-card-actions>
+            </q-card>
+          </div>
+          <div class="">
+            <q-card class="my-card q-mx-sm" bordered>
+              <q-img height="200px" src="/images/farmer1.webp" />
+              <q-card-section>
+                <div class="text-subtitle2 row items-center justify-between">
+                  <span class="text-grey my-font-poppins-light">
+                    <q-icon
+                      name="query_builder"
+                      color="grey"
+                      size="large"
+                      class="q-mr-sm"
+                    />3 days ago</span
+                  >
+                  <q-chip
+                    class="my-font-poppins-bold"
+                    label="Agriculture"
+                    ripple
+                    color="grey-3"
+                    text-color="purple"
+                  />
+                </div>
+                <div
+                  class="my-font-poppins-regular text-green text-body1 q-mt-sm q-mb-xs"
+                >
+                  Bridging farmer-industry gaps, as firm lists fast-moving crops
+                </div>
+                <div class="text-caption text-grey-8 my-font-poppins-light">
+                  Farmers in Nigeria have been urged to produce crops and other
+                  products based on guided industrial demands to reduce gluts,
+                  marketing challenges, gross importation and capital flight, as
+                  well as to build economic....
+                </div>
+              </q-card-section>
+              <q-card-actions>
+                <a
+                  target="_blank"
+                  class="read"
+                  href="https://guardian.ng/features/bridging-farmer-industry-gaps-as-firm-lists-fast-moving-crops/"
+                  >Read More</a
+                >
+                <q-space />
+              </q-card-actions>
+            </q-card>
+          </div>
+          <div class="">
+            <q-card class="my-card q-mx-sm" bordered>
+              <q-img height="200px" src="/images/food2.jpg" />
+              <q-card-section>
+                <div class="text-subtitle2 row items-center justify-between">
+                  <span class="text-grey my-font-poppins-light">
+                    <q-icon
+                      name="query_builder"
+                      color="grey"
+                      size="large"
+                      class="q-mr-sm"
+                    />5 days ago</span
+                  >
+                  <q-chip
+                    class="my-font-poppins-bold"
+                    label="Agriculture"
+                    ripple
+                    color="grey-3"
+                    text-color="purple"
+                  />
+                </div>
+                <div
+                  class="my-font-poppins-regular text-green text-body1 q-mt-sm q-mb-xs"
+                >
+                  How to address rising cost of food items
+                </div>
+                <div class="text-caption text-grey-8 my-font-poppins-light">
+                  A lecturer in the Faculty of Agriculture, University of
+                  Ibadan, Oyo State, Dr. Olabode Badiru, has called on the
+                  government to pay more attention to food security in the
+                  country to address the rising cost of foodstuffs.....
+                </div>
+              </q-card-section>
+              <q-card-actions>
+                <a
+                  target="_blank"
+                  class="read"
+                  href="https://guardian.ng/features/agro-care/how-to-address-rising-cost-of-food-items-by-don/"
+                  >Read More</a
+                >
+                <q-space />
+              </q-card-actions>
+            </q-card>
+          </div>
+          <div class="">
+            <q-card class="my-card q-mx-sm" bordered>
+              <q-img height="200px" src="/images/marker4.jpg" />
+              <q-card-section>
+                <div class="text-subtitle2 row items-center justify-between">
+                  <span class="text-grey my-font-poppins-light">
+                    <q-icon
+                      name="query_builder"
+                      color="grey"
+                      size="large"
+                      class="q-mr-sm"
+                    />7 days ago</span
+                  >
+                  <q-chip
+                    class="my-font-poppins-bold"
+                    label="Agriculture"
+                    ripple
+                    color="grey-3"
+                    text-color="purple"
+                  />
+                </div>
+                <div
+                  class="my-font-poppins-regular text-green text-body1 q-mt-sm q-mb-xs"
+                >
+                  No culture without agriculture, no faith without cultivation
+                </div>
+                <div class="text-caption text-grey-8 my-font-poppins-light">
+                  Man as a work in progress is both a subject and object of
+                  cultivation. There is no culture without cultivation both in
+                  its figurative and literal senses. As habitual beings, our
+                  repeated actions create a pattern that influences...
+                </div>
+              </q-card-section>
+              <q-card-actions>
+                <a
+                  target="_blank"
+                  class="read"
+                  href="https://www.vanguardngr.com/2021/01/no-culture-without-agriculture-no-faith-without-cultivation/"
+                  >Read More</a
+                >
+                <q-space />
+              </q-card-actions>
+            </q-card>
+          </div>
+        </VueSlickCarousel>
+      </div>
+
+      <!-- <div
         class="row q-my-sm"
         v-observe-visibility="{
           callback: (isVisible, entry) => isViewableNow(isVisible, entry, 'e'),
@@ -554,8 +1467,9 @@
             </q-card-actions>
           </q-card>
         </div>
-      </div>
+      </div> -->
     </section>
+    <Gallery/>
     <!--Footer Section-->
     <section>
       <div
@@ -680,7 +1594,7 @@
             </div>
             <div class="text-body2 q-mt-md">contact@nabg.ng</div>
             <div class="text-body2 q-mt-md">
-              +2348129929300 or +2348023591357
+             NABG Secretarait: +2348036702021, +2348129929300 or +2348023591357
             </div>
           </div>
         </div>
@@ -695,7 +1609,12 @@
 </template>
 
 <script>
+import Gallery from './Gallery.vue'
+import VueSlickCarousel from "vue-slick-carousel";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
+  components: { VueSlickCarousel,Gallery },
   data: () => ({
     showAnimationFor: {
       a: false,
@@ -703,7 +1622,13 @@ export default {
       c: false,
       d: false,
       e: false
-    }
+    },
+    settings: {
+      arrows: true,
+      dots: true,
+      slidesToShow: "3"
+    },
+    slide: "a"
   }),
   methods: {
     isViewableNow(isVisible, entry, section) {
@@ -740,5 +1665,47 @@ export default {
   cursor: pointer;
   color: white !important;
   background-color: #52af50 !important;
+}
+
+.read {
+  text-decoration: none;
+  color: orange;
+  font-size: 15px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  outline: 0;
+  border: 0;
+  vertical-align: middle;
+  padding: 0 12px;
+  font-size: 14px;
+  line-height: 1.715em;
+  text-decoration: none;
+  background: transparent;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+
+.my-card {
+  height: 500px !important;
+}
+
+.my_card {
+  transition: all 0.5s ease-in-out;
+}
+
+.my_card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+  .smart {
+    text-align: center;
+  }
 }
 </style>

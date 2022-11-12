@@ -3,7 +3,7 @@
     <header>
       <q-card flat square class="custom__header-bg-v4 row items-center">
         <q-card-section class="text-h3 text-grey-1 my-font-poppins-extraBold">
-          Board
+          Board Of Trustees
           <div class="text-h5 text-grey-1 my-font-poppins-thin">
             Nigeria Agribusiness Group
           </div>
